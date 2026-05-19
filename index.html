@@ -1,2015 +1,2623 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>THE NEXT BIG BRAND — A Schneider Cinema Original</title>
-<meta name="description" content="THE NEXT BIG BRAND (TNBB) — a premium entrepreneurship reality competition. 8 founders. 8 weeks. One breakout brand. Join the insider list before official enrollment opens." />
-<meta name="theme-color" content="#0a0a0a" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>THE NEXT BIG BRAND — A Schneider Cinema Original</title>
+  <meta name="description"
+    content="THE NEXT BIG BRAND (TNBB) — a premium entrepreneurship reality competition. 8 founders. 8 weeks. One breakout brand. Join the insider list before official enrollment opens." />
+  <meta name="theme-color" content="#0a0a0a" />
 
-<!-- Open Graph -->
-<meta property="og:title" content="THE NEXT BIG BRAND — Coming Soon" />
-<meta property="og:description" content="A disruptive reality competition where unknown entrepreneurs build real brands under pressure." />
-<meta property="og:type" content="website" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="THE NEXT BIG BRAND — Coming Soon" />
+  <meta property="og:description"
+    content="A disruptive reality competition where unknown entrepreneurs build real brands under pressure." />
+  <meta property="og:type" content="website" />
 
-<!-- Fonts: editorial serif display + precise modern sans -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter+Tight:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Fonts: editorial serif display + precise modern sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter+Tight:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
 
-<!-- Analytics / pixel placeholders (kept inert; ready to be activated) -->
-<!-- Meta Pixel: <script>!function(f,b,e,v,n,t,s){...}</script> -->
-<!-- Google Analytics: <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXX"></script> -->
-<!-- TikTok Pixel & LinkedIn Insight Tag: insert here when IDs are issued -->
+  <!-- Analytics / pixel placeholders (kept inert; ready to be activated) -->
+  <!-- Meta Pixel: <script>!function(f,b,e,v,n,t,s){...}</script> -->
+  <!-- Google Analytics: <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXX"></script> -->
+  <!-- TikTok Pixel & LinkedIn Insight Tag: insert here when IDs are issued -->
 
-<style>
-  /* -------------------------------------------------------------
+  <style>
+    /* -------------------------------------------------------------
      TNBB — THE NEXT BIG BRAND
      Aesthetic: Cinematic luxury. Black + champagne gold.
      Editorial serif display, precise modern sans.
      ------------------------------------------------------------- */
 
-  :root{
-    --ink:           #0a0a0a;
-    --ink-2:         #111111;
-    --ink-3:         #161616;
-    --charcoal:      #1c1c1c;
-    --line:          rgba(255,255,255,0.08);
-    --line-strong:   rgba(255,255,255,0.18);
-    --bone:          #f4efe6;
-    --bone-dim:      #d8d2c5;
-    --mute:          #8a8478;
-    --gold:          #c8a564;
-    --gold-soft:     #d8b97a;
-    --gold-deep:     #8a6f3d;
-    --gold-glow:     rgba(200,165,100,0.22);
+    :root {
+      --ink: #0a0a0a;
+      --ink-2: #111111;
+      --ink-3: #161616;
+      --charcoal: #1c1c1c;
+      --line: rgba(255, 255, 255, 0.08);
+      --line-strong: rgba(255, 255, 255, 0.18);
+      --bone: #f4efe6;
+      --bone-dim: #d8d2c5;
+      --mute: #8a8478;
+      --gold: #c8a564;
+      --gold-soft: #d8b97a;
+      --gold-deep: #8a6f3d;
+      --gold-glow: rgba(200, 165, 100, 0.22);
 
-    --serif:  'Cormorant Garamond', 'Times New Roman', serif;
-    --sans:   'Inter Tight', system-ui, -apple-system, sans-serif;
+      --serif: 'Cormorant Garamond', 'Times New Roman', serif;
+      --sans: 'Inter Tight', system-ui, -apple-system, sans-serif;
 
-    --container: 1240px;
-    --pad:    clamp(20px, 4vw, 56px);
+      --container: 1240px;
+      --pad: clamp(20px, 4vw, 56px);
 
-    --ease:   cubic-bezier(.22,.61,.36,1);
-    --ease-2: cubic-bezier(.65,.05,.36,1);
-  }
+      --ease: cubic-bezier(.22, .61, .36, 1);
+      --ease-2: cubic-bezier(.65, .05, .36, 1);
+    }
 
-  *{ box-sizing: border-box; }
-  html{ scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
-  body{
-    margin: 0;
-    background: var(--ink);
-    color: var(--bone);
-    font-family: var(--sans);
-    font-weight: 300;
-    line-height: 1.55;
-    letter-spacing: 0.005em;
-    overflow-x: hidden;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
+    * {
+      box-sizing: border-box;
+    }
 
-  /* Subtle film-grain overlay for the whole page */
-  body::before{
-    content:"";
-    position: fixed; inset: 0;
-    pointer-events: none;
-    z-index: 999;
-    opacity: 0.045;
-    mix-blend-mode: overlay;
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.8 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
-  }
+    html {
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
 
-  a{ color: inherit; text-decoration: none; }
-  img{ max-width: 100%; display: block; }
+    body {
+      margin: 0;
+      background: var(--ink);
+      color: var(--bone);
+      font-family: var(--sans);
+      font-weight: 300;
+      line-height: 1.55;
+      letter-spacing: 0.005em;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
 
-  /* Typography utilities */
-  .eyebrow{
-    font-family: var(--sans);
-    font-size: 11px;
-    letter-spacing: 0.32em;
-    text-transform: uppercase;
-    color: var(--gold);
-    font-weight: 500;
-  }
-  .display{
-    font-family: var(--serif);
-    font-weight: 400;
-    line-height: 0.96;
-    letter-spacing: -0.015em;
-  }
-  .display em{
-    font-style: italic;
-    color: var(--gold-soft);
-    font-weight: 400;
-  }
+    /* Subtle film-grain overlay for the whole page */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 999;
+      opacity: 0.045;
+      mix-blend-mode: overlay;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.8 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+    }
 
-  /* Layout helpers */
-  .wrap{
-    max-width: var(--container);
-    margin: 0 auto;
-    padding: 0 var(--pad);
-    position: relative;
-  }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 
-  /* ---------------- NAVIGATION ---------------- */
-  .nav{
-    position: fixed;
-    top: 0; left: 0; right: 0;
-    z-index: 100;
-    padding: 20px 0;
-    transition: all .5s var(--ease);
-    background: linear-gradient(180deg, rgba(10,10,10,0.55) 0%, rgba(10,10,10,0) 100%);
-    backdrop-filter: blur(0px);
-  }
-  .nav.scrolled{
-    background: rgba(10,10,10,0.78);
-    backdrop-filter: blur(18px) saturate(140%);
-    -webkit-backdrop-filter: blur(18px) saturate(140%);
-    border-bottom: 1px solid var(--line);
-    padding: 14px 0;
-  }
-  .nav__inner{
-    display: flex; align-items: center; justify-content: space-between;
-    gap: 24px;
-  }
-  .brand{
-    display: flex; align-items: center; gap: 12px;
-    font-family: var(--sans);
-    font-weight: 600;
-    font-size: 13px;
-    letter-spacing: 0.28em;
-    text-transform: uppercase;
-  }
-  .brand__mark{
-    width: 30px; height: 30px;
-    border: 1px solid var(--gold);
-    display: grid; place-items: center;
-    position: relative;
-  }
-  .brand__mark::before{
-    content:"";
-    position: absolute; inset: 3px;
-    border: 1px solid var(--gold-deep);
-  }
-  .brand__mark span{
-    font-family: var(--serif);
-    font-style: italic;
-    font-size: 14px;
-    color: var(--gold);
-    letter-spacing: 0;
-  }
-  .nav__menu{
-    display: flex; gap: 32px;
-    font-size: 12px;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--bone-dim);
-  }
-  .nav__menu a{
-    position: relative;
-    padding: 6px 0;
-    transition: color .3s var(--ease);
-  }
-  .nav__menu a::after{
-    content:"";
-    position: absolute;
-    left: 0; right: 100%; bottom: 0;
-    height: 1px;
-    background: var(--gold);
-    transition: right .4s var(--ease);
-  }
-  .nav__menu a:hover{ color: var(--bone); }
-  .nav__menu a:hover::after{ right: 0; }
+    img {
+      max-width: 100%;
+      display: block;
+    }
 
-  .nav__cta{
-    display: inline-flex; align-items: center;
-    padding: 10px 22px;
-    border: 1px solid var(--gold);
-    color: var(--gold);
-    font-size: 11px;
-    letter-spacing: 0.24em;
-    text-transform: uppercase;
-    font-weight: 500;
-    transition: all .4s var(--ease);
-    background: transparent;
-    cursor: pointer;
-  }
-  .nav__cta:hover{
-    background: var(--gold);
-    color: var(--ink);
-  }
-  .nav__burger{
-    display: none;
-    width: 36px; height: 36px;
-    background: transparent;
-    border: 1px solid var(--line-strong);
-    cursor: pointer;
-    position: relative;
-  }
-  .nav__burger span{
-    position: absolute;
-    left: 9px; right: 9px;
-    height: 1px;
-    background: var(--bone);
-    transition: all .3s var(--ease);
-  }
-  .nav__burger span:nth-child(1){ top: 13px; }
-  .nav__burger span:nth-child(2){ top: 21px; }
+    /* Typography utilities */
+    .eyebrow {
+      font-family: var(--sans);
+      font-size: 11px;
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 500;
+    }
 
-  /* ---------------- HERO ---------------- */
-  .hero{
-    position: relative;
-    min-height: 100vh;
-    min-height: 100svh;
-    display: flex;
-    align-items: center;
-    padding: 120px 0 80px;
-    overflow: hidden;
-    isolation: isolate;
-  }
-  /* Cinematic background — layered gradients + light shaft */
-  .hero__bg{
-    position: absolute; inset: 0;
-    z-index: -2;
-    background:
-      radial-gradient(ellipse at 70% 20%, rgba(200,165,100,0.18) 0%, transparent 45%),
-      radial-gradient(ellipse at 20% 80%, rgba(200,165,100,0.06) 0%, transparent 50%),
-      linear-gradient(180deg, #0a0a0a 0%, #060606 100%);
-  }
-  .hero__bg::after{
-    content:"";
-    position: absolute; inset: 0;
-    background-image:
-      linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
-    background-size: 80px 80px;
-    mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
-    -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
-  }
-  /* Animated light shaft */
-  .hero__shaft{
-    position: absolute;
-    top: -10%; right: -5%;
-    width: 60%; height: 130%;
-    background: linear-gradient(110deg, transparent 40%, rgba(200,165,100,0.08) 50%, transparent 60%);
-    transform: rotate(8deg);
-    z-index: -1;
-    animation: drift 18s ease-in-out infinite alternate;
-  }
-  @keyframes drift{
-    0%   { transform: translateX(0)   rotate(8deg); opacity: .7; }
-    100% { transform: translateX(-40px) rotate(8deg); opacity: 1; }
-  }
+    .display {
+      font-family: var(--serif);
+      font-weight: 400;
+      line-height: 0.96;
+      letter-spacing: -0.015em;
+    }
 
-  .hero__inner{
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 60px;
-  }
-  .hero__top{
-    display: flex;
-    align-items: center;
-    gap: 18px;
-    margin-bottom: 8px;
-  }
-  .hero__top .line{
-    flex: 1; height: 1px;
-    background: linear-gradient(90deg, var(--gold), transparent);
-    max-width: 80px;
-  }
-  .hero__top .meta{
-    font-size: 10px;
-    letter-spacing: 0.4em;
-    text-transform: uppercase;
-    color: var(--mute);
-  }
-  .hero__title{
-    font-size: clamp(48px, 9vw, 132px);
-    margin: 0 0 28px;
-    max-width: 14ch;
-  }
-  .hero__sub{
-    font-family: var(--serif);
-    font-style: italic;
-    font-size: clamp(20px, 2.4vw, 30px);
-    font-weight: 300;
-    color: var(--bone-dim);
-    margin: 0 0 24px;
-    max-width: 36ch;
-    line-height: 1.3;
-  }
-  .hero__supporting{
-    font-size: 15px;
-    color: var(--mute);
-    max-width: 52ch;
-    line-height: 1.7;
-    margin: 0 0 44px;
-  }
+    .display em {
+      font-style: italic;
+      color: var(--gold-soft);
+      font-weight: 400;
+    }
 
-  /* Buttons */
-  .btn{
-    display: inline-flex;
-    align-items: center;
-    gap: 14px;
-    padding: 18px 32px;
-    font-size: 12px;
-    letter-spacing: 0.26em;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-family: var(--sans);
-    cursor: pointer;
-    border: none;
-    transition: all .5s var(--ease);
-    position: relative;
-    overflow: hidden;
-    background: transparent;
-  }
-  .btn--gold{
-    background: var(--gold);
-    color: var(--ink);
-  }
-  .btn--gold:hover{
-    background: var(--gold-soft);
-    transform: translateY(-2px);
-    box-shadow: 0 24px 60px -20px var(--gold-glow);
-  }
-  .btn--ghost{
-    color: var(--bone);
-    border: 1px solid var(--line-strong);
-  }
-  .btn--ghost:hover{
-    border-color: var(--gold);
-    color: var(--gold);
-  }
-  .btn .arrow{
-    width: 22px; height: 1px;
-    background: currentColor;
-    position: relative;
-    transition: width .4s var(--ease);
-  }
-  .btn .arrow::after{
-    content:"";
-    position: absolute;
-    right: 0; top: -3px;
-    width: 7px; height: 7px;
-    border-top: 1px solid currentColor;
-    border-right: 1px solid currentColor;
-    transform: rotate(45deg);
-  }
-  .btn:hover .arrow{ width: 32px; }
+    /* Layout helpers */
+    .wrap {
+      max-width: var(--container);
+      margin: 0 auto;
+      padding: 0 var(--pad);
+      position: relative;
+    }
 
-  .hero__ctas{
-    display: flex; gap: 16px; flex-wrap: wrap;
-    margin-bottom: 80px;
-  }
+    /* ---------------- NAVIGATION ---------------- */
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      padding: 20px 0;
+      transition: all .5s var(--ease);
+      background: linear-gradient(180deg, rgba(10, 10, 10, 0.55) 0%, rgba(10, 10, 10, 0) 100%);
+      backdrop-filter: blur(0px);
+    }
 
-  /* Status module */
-  .status{
-    border-top: 1px solid var(--line);
-    padding-top: 32px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 32px;
-  }
-  .status__item{
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
-  .status__label{
-    font-size: 10px;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    color: var(--mute);
-    display: flex; align-items: center; gap: 8px;
-  }
-  .status__dot{
-    width: 6px; height: 6px;
-    border-radius: 50%;
-    background: var(--gold);
-    box-shadow: 0 0 12px var(--gold-glow);
-    animation: pulse 2.4s ease-in-out infinite;
-  }
-  .status__dot--mute{
-    background: var(--mute);
-    box-shadow: none;
-    animation: none;
-  }
-  @keyframes pulse{
-    0%, 100%{ opacity: 1; transform: scale(1); }
-    50%     { opacity: .4; transform: scale(0.85); }
-  }
-  .status__value{
-    font-family: var(--serif);
-    font-size: 20px;
-    color: var(--bone);
-    font-weight: 400;
-  }
+    .nav.scrolled {
+      background: rgba(10, 10, 10, 0.78);
+      backdrop-filter: blur(18px) saturate(140%);
+      -webkit-backdrop-filter: blur(18px) saturate(140%);
+      border-bottom: 1px solid var(--line);
+      padding: 14px 0;
+    }
 
-  /* ---------------- SECTION COMMON ---------------- */
-  section{ position: relative; }
-  .section{
-    padding: clamp(80px, 12vw, 160px) 0;
-    position: relative;
-  }
-  .section--bordered{ border-top: 1px solid var(--line); }
+    .nav__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
 
-  .section__head{
-    margin-bottom: 64px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
-    align-items: end;
-  }
-  .section__head--center{
-    grid-template-columns: 1fr;
-    text-align: center;
-    max-width: 760px;
-    margin-left: auto; margin-right: auto;
-  }
-  .section__num{
-    font-family: var(--serif);
-    font-style: italic;
-    color: var(--gold);
-    font-size: 14px;
-    letter-spacing: 0.06em;
-  }
-  .section__title{
-    font-size: clamp(36px, 5.4vw, 76px);
-    margin: 12px 0 0;
-  }
-  .section__lede{
-    font-family: var(--serif);
-    font-size: clamp(18px, 2vw, 24px);
-    color: var(--bone-dim);
-    line-height: 1.4;
-    font-weight: 300;
-    margin: 0;
-  }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-family: var(--sans);
+      font-weight: 600;
+      font-size: 13px;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+    }
 
-  /* Reveal-on-scroll */
-  .reveal{
-    opacity: 0;
-    transform: translateY(28px);
-    transition: opacity 1.1s var(--ease), transform 1.1s var(--ease);
-  }
-  .reveal.in{
-    opacity: 1;
-    transform: translateY(0);
-  }
-  .reveal.delay-1{ transition-delay: .1s; }
-  .reveal.delay-2{ transition-delay: .2s; }
-  .reveal.delay-3{ transition-delay: .3s; }
-  .reveal.delay-4{ transition-delay: .4s; }
+    .brand__mark {
+      width: 30px;
+      height: 30px;
+      border: 1px solid var(--gold);
+      display: grid;
+      place-items: center;
+      position: relative;
+    }
 
-  /* ---------------- TEASER ---------------- */
-  .teaser{
-    text-align: center;
-    padding: clamp(80px, 14vw, 180px) 0;
-    border-top: 1px solid var(--line);
-    border-bottom: 1px solid var(--line);
-    position: relative;
-  }
-  .teaser::before, .teaser::after{
-    content:"";
-    position: absolute;
-    left: 50%;
-    width: 1px; height: 30px;
-    background: var(--gold);
-    transform: translateX(-50%);
-  }
-  .teaser::before{ top: -1px; }
-  .teaser::after{ bottom: -1px; }
-  .teaser__text{
-    font-family: var(--serif);
-    font-size: clamp(24px, 3.4vw, 44px);
-    line-height: 1.3;
-    font-weight: 300;
-    max-width: 22ch;
-    margin: 0 auto;
-  }
-  .teaser__text em{
-    font-style: italic;
-    color: var(--gold-soft);
-  }
+    .brand__mark::before {
+      content: "";
+      position: absolute;
+      inset: 3px;
+      border: 1px solid var(--gold-deep);
+    }
 
-  /* ---------------- WHAT IS TNBB ---------------- */
-  .what{
-    display: grid;
-    grid-template-columns: 5fr 6fr;
-    gap: clamp(40px, 8vw, 120px);
-    align-items: center;
-  }
-  .what__art{
-    position: relative;
-    aspect-ratio: 4 / 5;
-    background:
-      radial-gradient(circle at 30% 30%, rgba(200,165,100,0.15) 0%, transparent 50%),
-      linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
-    border: 1px solid var(--line);
-    overflow: hidden;
-  }
-  .what__art::before{
-    content: "TNBB";
-    position: absolute;
-    inset: 0;
-    display: grid;
-    place-items: center;
-    font-family: var(--serif);
-    font-size: clamp(80px, 14vw, 220px);
-    font-weight: 400;
-    color: transparent;
-    background: linear-gradient(180deg, var(--gold) 20%, rgba(200,165,100,0.05) 90%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    letter-spacing: -0.03em;
-  }
-  .what__art::after{
-    content:"";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(115deg, transparent 40%, rgba(255,255,255,0.06) 50%, transparent 60%);
-    animation: shine 8s ease-in-out infinite;
-  }
-  @keyframes shine{
-    0%, 100%{ transform: translateX(-30%); }
-    50%     { transform: translateX(30%); }
-  }
-  .what__art .frame-corners span{
-    position: absolute;
-    width: 24px; height: 24px;
-    border-color: var(--gold);
-    border-style: solid;
-    border-width: 0;
-  }
-  .what__art .frame-corners span:nth-child(1){ top: 16px; left: 16px;     border-top-width: 1px; border-left-width: 1px; }
-  .what__art .frame-corners span:nth-child(2){ top: 16px; right: 16px;    border-top-width: 1px; border-right-width: 1px; }
-  .what__art .frame-corners span:nth-child(3){ bottom: 16px; left: 16px;  border-bottom-width: 1px; border-left-width: 1px; }
-  .what__art .frame-corners span:nth-child(4){ bottom: 16px; right: 16px; border-bottom-width: 1px; border-right-width: 1px; }
+    .brand__mark span {
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: 14px;
+      color: var(--gold);
+      letter-spacing: 0;
+    }
 
-  .what__copy h2{
-    font-size: clamp(32px, 4.4vw, 56px);
-    font-family: var(--serif);
-    font-weight: 400;
-    line-height: 1.05;
-    margin: 16px 0 28px;
-  }
-  .what__copy p{
-    font-size: 17px;
-    color: var(--bone-dim);
-    line-height: 1.7;
-    max-width: 52ch;
-  }
+    .nav__menu {
+      display: flex;
+      gap: 32px;
+      font-size: 12px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--bone-dim);
+    }
 
-  /* ---------------- COMPARISON ---------------- */
-  .compare{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 0;
-    border-top: 1px solid var(--line);
-    border-bottom: 1px solid var(--line);
-  }
-  .compare__cell{
-    padding: 56px 36px;
-    border-right: 1px solid var(--line);
-    position: relative;
-    transition: background .5s var(--ease);
-  }
-  .compare__cell:last-child{ border-right: none; }
-  .compare__cell:hover{ background: rgba(200,165,100,0.03); }
-  .compare__cell--final{
-    background: linear-gradient(180deg, rgba(200,165,100,0.06), transparent);
-  }
-  .compare__label{
-    font-size: 11px;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    color: var(--mute);
-    margin-bottom: 24px;
-  }
-  .compare__final-label{ color: var(--gold); }
-  .compare__stmt{
-    font-family: var(--serif);
-    font-size: clamp(20px, 2.2vw, 28px);
-    line-height: 1.25;
-    font-weight: 400;
-  }
-  .compare__stmt em{
-    font-style: italic;
-    color: var(--gold-soft);
-    display: block;
-    margin-top: 6px;
-  }
-  .compare__stmt strong{
-    color: var(--bone);
-    font-weight: 400;
-    border-bottom: 1px solid var(--gold);
-    padding-bottom: 2px;
-  }
+    .nav__menu a {
+      position: relative;
+      padding: 6px 0;
+      transition: color .3s var(--ease);
+    }
 
-  /* ---------------- BRAND LAB ---------------- */
-  .lab{
-    position: relative;
-    padding: clamp(100px, 14vw, 180px) 0;
-    background:
-      radial-gradient(ellipse at 50% 0%, rgba(200,165,100,0.12) 0%, transparent 40%),
-      linear-gradient(180deg, #060606 0%, #0a0a0a 100%);
-    overflow: hidden;
-  }
-  .lab::before{
-    content:"";
-    position: absolute; inset: 0;
-    background-image:
-      linear-gradient(rgba(200,165,100,0.04) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(200,165,100,0.04) 1px, transparent 1px);
-    background-size: 60px 60px;
-    mask-image: radial-gradient(ellipse at center, black, transparent 70%);
-    -webkit-mask-image: radial-gradient(ellipse at center, black, transparent 70%);
-    pointer-events: none;
-  }
-  .lab__head{ text-align: center; margin-bottom: 80px; position: relative; }
-  .lab__title{
-    font-size: clamp(48px, 7.5vw, 110px);
-    margin: 16px 0 24px;
-  }
-  .lab__lede{
-    font-family: var(--serif);
-    font-style: italic;
-    font-size: clamp(18px, 2vw, 24px);
-    color: var(--bone-dim);
-    max-width: 30ch;
-    margin: 0 auto;
-    line-height: 1.4;
-  }
-  .lab__grid{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1px;
-    background: var(--line);
-    border: 1px solid var(--line);
-    position: relative;
-  }
-  .lab__pill{
-    background: var(--ink-2);
-    padding: 40px 28px;
-    text-align: center;
-    transition: all .5s var(--ease);
-    position: relative;
-    overflow: hidden;
-  }
-  .lab__pill::before{
-    content:"";
-    position: absolute;
-    top: 0; left: 50%;
-    width: 0; height: 1px;
-    background: var(--gold);
-    transform: translateX(-50%);
-    transition: width .5s var(--ease);
-  }
-  .lab__pill:hover{ background: var(--ink-3); }
-  .lab__pill:hover::before{ width: 60%; }
-  .lab__pill .num{
-    font-family: var(--serif);
-    font-style: italic;
-    color: var(--gold);
-    font-size: 12px;
-    margin-bottom: 16px;
-    display: block;
-  }
-  .lab__pill .name{
-    font-family: var(--serif);
-    font-size: clamp(20px, 2vw, 26px);
-    font-weight: 400;
-    line-height: 1.1;
-  }
+    .nav__menu a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 100%;
+      bottom: 0;
+      height: 1px;
+      background: var(--gold);
+      transition: right .4s var(--ease);
+    }
 
-  /* ---------------- PATHS ---------------- */
-  .paths{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
-  }
-  .path{
-    position: relative;
-    padding: 48px 44px;
-    background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
-    border: 1px solid var(--line);
-    transition: all .6s var(--ease);
-    overflow: hidden;
-    min-height: 360px;
-    display: flex;
-    flex-direction: column;
-  }
-  .path::before{
-    content:"";
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 1px;
-    background: linear-gradient(90deg, transparent, var(--gold), transparent);
-    transform: translateX(-100%);
-    transition: transform .8s var(--ease);
-  }
-  .path:hover::before{ transform: translateX(0); }
-  .path:hover{
-    border-color: var(--line-strong);
-    background: linear-gradient(180deg, rgba(200,165,100,0.04), transparent);
-    transform: translateY(-3px);
-  }
-  .path__num{
-    font-family: var(--serif);
-    font-style: italic;
-    color: var(--gold);
-    font-size: 14px;
-    margin-bottom: 20px;
-  }
-  .path__title{
-    font-family: var(--serif);
-    font-size: clamp(28px, 3vw, 38px);
-    font-weight: 400;
-    line-height: 1.05;
-    margin: 0 0 20px;
-  }
-  .path__copy{
-    font-size: 15px;
-    color: var(--bone-dim);
-    line-height: 1.7;
-    margin: 0 0 32px;
-    flex: 1;
-  }
-  .path__cta{
-    display: inline-flex;
-    align-items: center;
-    gap: 14px;
-    font-size: 11px;
-    letter-spacing: 0.26em;
-    text-transform: uppercase;
-    color: var(--gold);
-    cursor: pointer;
-    background: transparent;
-    border: none;
-    padding: 0;
-    font-family: var(--sans);
-    font-weight: 500;
-    align-self: flex-start;
-    transition: color .3s var(--ease);
-  }
-  .path__cta:hover{ color: var(--gold-soft); }
-  .path__cta .arrow{
-    width: 22px; height: 1px;
-    background: currentColor;
-    position: relative;
-    transition: width .4s var(--ease);
-  }
-  .path__cta .arrow::after{
-    content:"";
-    position: absolute;
-    right: 0; top: -3px;
-    width: 6px; height: 6px;
-    border-top: 1px solid currentColor;
-    border-right: 1px solid currentColor;
-    transform: rotate(45deg);
-  }
-  .path__cta:hover .arrow{ width: 32px; }
+    .nav__menu a:hover {
+      color: var(--bone);
+    }
 
-  /* ---------------- AUDIENCE ---------------- */
-  .audience{
-    text-align: center;
-    padding: clamp(100px, 14vw, 180px) 0;
-    border-top: 1px solid var(--line);
-    border-bottom: 1px solid var(--line);
-    background: radial-gradient(ellipse at center, rgba(200,165,100,0.05) 0%, transparent 60%);
-  }
-  .audience__title{
-    font-size: clamp(36px, 5.5vw, 76px);
-    margin: 16px auto 28px;
-    max-width: 18ch;
-  }
-  .audience__copy{
-    font-size: 17px;
-    color: var(--bone-dim);
-    max-width: 52ch;
-    margin: 0 auto 60px;
-    line-height: 1.7;
-  }
-  .audience__verbs{
-    display: flex;
-    justify-content: center;
-    gap: clamp(20px, 5vw, 60px);
-    flex-wrap: wrap;
-  }
-  .audience__verbs span{
-    font-family: var(--serif);
-    font-style: italic;
-    font-size: clamp(24px, 3vw, 40px);
-    color: var(--bone);
-    position: relative;
-    padding: 0 4px;
-    transition: color .3s var(--ease);
-    cursor: default;
-  }
-  .audience__verbs span::after{
-    content: "·";
-    position: absolute;
-    right: -32px; top: 50%;
-    transform: translateY(-50%);
-    color: var(--gold);
-    font-size: 0.7em;
-  }
-  .audience__verbs span:last-child::after{ display: none; }
-  .audience__verbs span:hover{ color: var(--gold-soft); }
+    .nav__menu a:hover::after {
+      right: 0;
+    }
 
-  /* ---------------- WHY NOW ---------------- */
-  .why{
-    display: grid;
-    grid-template-columns: 5fr 7fr;
-    gap: clamp(40px, 8vw, 120px);
-    align-items: start;
-  }
-  .why__list{
-    list-style: none;
-    margin: 0; padding: 0;
-    counter-reset: why;
-  }
-  .why__list li{
-    counter-increment: why;
-    padding: 28px 0;
-    border-bottom: 1px solid var(--line);
-    font-family: var(--serif);
-    font-size: clamp(20px, 2.2vw, 28px);
-    line-height: 1.3;
-    font-weight: 300;
-    display: grid;
-    grid-template-columns: 60px 1fr;
-    gap: 24px;
-    align-items: baseline;
-    transition: padding .4s var(--ease);
-  }
-  .why__list li:first-child{ border-top: 1px solid var(--line); }
-  .why__list li:hover{ padding-left: 12px; }
-  .why__list li::before{
-    content: "0" counter(why);
-    font-family: var(--serif);
-    font-style: italic;
-    color: var(--gold);
-    font-size: 14px;
-  }
-  .why__list em{ font-style: italic; color: var(--gold-soft); }
+    .nav__cta {
+      display: inline-flex;
+      align-items: center;
+      padding: 10px 22px;
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      font-size: 11px;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      font-weight: 500;
+      transition: all .4s var(--ease);
+      background: transparent;
+      cursor: pointer;
+    }
 
-  /* ---------------- STAKES ---------------- */
-  .stakes{
-    background: linear-gradient(180deg, #060606 0%, #0a0a0a 100%);
-    padding: clamp(100px, 14vw, 180px) 0;
-    position: relative;
-    overflow: hidden;
-  }
-  .stakes::before{
-    content:"";
-    position: absolute;
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
-    width: 800px; height: 800px;
-    background: radial-gradient(circle, var(--gold-glow) 0%, transparent 60%);
-    filter: blur(60px);
-    pointer-events: none;
-    opacity: 0.5;
-  }
-  .stakes__head{ text-align: center; margin-bottom: 80px; position: relative; }
-  .stakes__grid{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1px;
-    position: relative;
-  }
-  .stake{
-    padding: 48px 28px;
-    text-align: center;
-    border: 1px solid var(--line);
-    margin-right: -1px;
-    margin-bottom: -1px;
-    background: rgba(10,10,10,0.6);
-    backdrop-filter: blur(8px);
-    transition: all .5s var(--ease);
-    position: relative;
-  }
-  .stake:hover{
-    background: rgba(200,165,100,0.04);
-    border-color: var(--line-strong);
-    z-index: 1;
-  }
-  .stake__icon{
-    width: 32px; height: 32px;
-    margin: 0 auto 20px;
-    display: grid; place-items: center;
-    color: var(--gold);
-  }
-  .stake__icon svg{ width: 24px; height: 24px; }
-  .stake__text{
-    font-family: var(--serif);
-    font-size: 20px;
-    line-height: 1.2;
-    font-weight: 400;
-  }
-  .stake--final{
-    background: linear-gradient(180deg, rgba(200,165,100,0.08), rgba(200,165,100,0.02));
-    border-color: var(--gold-deep);
-  }
-  .stake--final .stake__text em{
-    font-style: italic;
-    color: var(--gold-soft);
-    display: block;
-  }
+    .nav__cta:hover {
+      background: var(--gold);
+      color: var(--ink);
+    }
 
-  /* ---------------- VIDEO SOON ---------------- */
-  .video-soon{
-    display: grid;
-    grid-template-columns: 5fr 7fr;
-    gap: clamp(40px, 8vw, 100px);
-    align-items: center;
-  }
-  .video-soon__visual{
-    position: relative;
-    aspect-ratio: 4 / 3;
-    background:
-      radial-gradient(circle at 70% 30%, rgba(200,165,100,0.18) 0%, transparent 60%),
-      linear-gradient(135deg, #181818 0%, #080808 100%);
-    border: 1px solid var(--line);
-    display: grid;
-    place-items: center;
-    overflow: hidden;
-  }
-  .video-soon__visual::before{
-    content:"";
-    position: absolute; inset: 0;
-    background-image:
-      linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
-    background-size: 30px 30px;
-  }
-  .play-mark{
-    width: 100px; height: 100px;
-    border: 1px solid var(--gold);
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-    position: relative;
-    z-index: 1;
-    transition: all .5s var(--ease);
-    cursor: pointer;
-  }
-  .play-mark::before{
-    content:"";
-    position: absolute;
-    inset: -8px;
-    border: 1px solid var(--gold-deep);
-    border-radius: 50%;
-    opacity: 0.5;
-  }
-  .play-mark::after{
-    content:"";
-    width: 0; height: 0;
-    border-left: 18px solid var(--gold);
-    border-top: 11px solid transparent;
-    border-bottom: 11px solid transparent;
-    margin-left: 5px;
-  }
-  .video-soon__visual:hover .play-mark{
-    transform: scale(1.05);
-    box-shadow: 0 0 60px var(--gold-glow);
-  }
-  .video-soon__timer{
-    position: absolute;
-    bottom: 24px; left: 24px;
-    font-family: var(--serif);
-    font-style: italic;
-    color: var(--gold);
-    font-size: 14px;
-  }
-  .video-soon__rec{
-    position: absolute;
-    top: 24px; right: 24px;
-    display: flex; align-items: center; gap: 8px;
-    font-size: 10px;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    color: var(--bone-dim);
-  }
-  .video-soon__rec .dot{
-    width: 8px; height: 8px;
-    border-radius: 50%;
-    background: var(--gold);
-    animation: pulse 1.8s ease-in-out infinite;
-  }
-  .video-soon h2{
-    font-family: var(--serif);
-    font-size: clamp(32px, 4.4vw, 56px);
-    font-weight: 400;
-    line-height: 1.05;
-    margin: 16px 0 28px;
-  }
-  .video-soon p{
-    font-size: 16px;
-    color: var(--bone-dim);
-    line-height: 1.7;
-    max-width: 50ch;
-    margin: 0 0 36px;
-  }
+    .nav__burger {
+      display: none;
+      width: 36px;
+      height: 36px;
+      background: transparent;
+      border: 1px solid var(--line-strong);
+      cursor: pointer;
+      position: relative;
+    }
 
-  /* ---------------- CREDIBILITY ---------------- */
-  .credibility{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 0;
-    border-top: 1px solid var(--line);
-    border-bottom: 1px solid var(--line);
-  }
-  .cred{
-    padding: 56px 36px;
-    border-right: 1px solid var(--line);
-    text-align: left;
-  }
-  .cred:last-child{ border-right: none; }
-  .cred__label{
-    font-size: 10px;
-    letter-spacing: 0.32em;
-    text-transform: uppercase;
-    color: var(--mute);
-    margin-bottom: 24px;
-  }
-  .cred__status{
-    font-family: var(--serif);
-    font-size: clamp(22px, 2.4vw, 30px);
-    font-style: italic;
-    color: var(--gold-soft);
-    font-weight: 400;
-    line-height: 1.15;
-  }
-  .cred__hint{
-    font-size: 12px;
-    color: var(--mute);
-    margin-top: 18px;
-    letter-spacing: 0.04em;
-  }
+    .nav__burger span {
+      position: absolute;
+      left: 9px;
+      right: 9px;
+      height: 1px;
+      background: var(--bone);
+      transition: all .3s var(--ease);
+    }
 
-  /* ---------------- FORM ---------------- */
-  .form-section{
-    background: linear-gradient(180deg, #060606 0%, #0a0a0a 100%);
-    padding: clamp(100px, 14vw, 180px) 0;
-    position: relative;
-    overflow: hidden;
-  }
-  .form-section::before{
-    content:"";
-    position: absolute;
-    top: 0; left: 50%;
-    transform: translateX(-50%);
-    width: 1200px; height: 1200px;
-    border-radius: 50%;
-    background: radial-gradient(circle, var(--gold-glow) 0%, transparent 60%);
-    filter: blur(80px);
-    opacity: 0.4;
-    pointer-events: none;
-  }
-  .form-wrap{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: clamp(40px, 6vw, 80px);
-    position: relative;
-    align-items: start;
-  }
-  .form-intro h2{
-    font-family: var(--serif);
-    font-size: clamp(36px, 5vw, 64px);
-    font-weight: 400;
-    line-height: 1.05;
-    margin: 16px 0 28px;
-  }
-  .form-intro h2 em{ font-style: italic; color: var(--gold-soft); }
-  .form-intro p{
-    font-size: 16px;
-    color: var(--bone-dim);
-    line-height: 1.7;
-    margin: 0 0 32px;
-    max-width: 48ch;
-  }
-  .form-intro__perks{
-    list-style: none;
-    margin: 0; padding: 0;
-    display: grid;
-    gap: 14px;
-  }
-  .form-intro__perks li{
-    font-size: 13px;
-    letter-spacing: 0.06em;
-    color: var(--bone-dim);
-    display: flex; align-items: center; gap: 14px;
-  }
-  .form-intro__perks li::before{
-    content:"";
-    width: 16px; height: 1px;
-    background: var(--gold);
-    display: block;
-    flex-shrink: 0;
-  }
+    .nav__burger span:nth-child(1) {
+      top: 13px;
+    }
 
-  /* Form card — glassmorphic */
-  .form-card{
-    background: rgba(255,255,255,0.025);
-    border: 1px solid var(--line-strong);
-    padding: clamp(32px, 4vw, 56px);
-    backdrop-filter: blur(20px) saturate(140%);
-    -webkit-backdrop-filter: blur(20px) saturate(140%);
-    position: relative;
-  }
-  .form-card::before{
-    content:"";
-    position: absolute;
-    top: -1px; left: -1px; right: -1px;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, var(--gold), transparent);
-  }
-  .form-card__head{
-    display: flex; align-items: center; gap: 14px;
-    margin-bottom: 32px;
-    padding-bottom: 24px;
-    border-bottom: 1px solid var(--line);
-  }
-  .form-card__head .dot{
-    width: 8px; height: 8px;
-    background: var(--gold);
-    border-radius: 50%;
-    box-shadow: 0 0 12px var(--gold-glow);
-  }
-  .form-card__head span{
-    font-size: 11px;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    color: var(--bone-dim);
-  }
+    .nav__burger span:nth-child(2) {
+      top: 21px;
+    }
 
-  .form-grid{
-    display: grid;
-    gap: 20px;
-  }
-  .field{
-    position: relative;
-  }
-  .field label{
-    display: block;
-    font-size: 10px;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    color: var(--mute);
-    margin-bottom: 10px;
-  }
-  .field label .req{ color: var(--gold); }
-  .field input,
-  .field select{
-    width: 100%;
-    background: transparent;
-    border: none;
-    border-bottom: 1px solid var(--line-strong);
-    padding: 12px 0;
-    color: var(--bone);
-    font-family: var(--sans);
-    font-size: 15px;
-    font-weight: 300;
-    outline: none;
-    transition: border-color .3s var(--ease);
-    -webkit-appearance: none;
-            appearance: none;
-  }
-  .field select{
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8' fill='none'><path d='M1 1l5 5 5-5' stroke='%23c8a564' stroke-width='1.5'/></svg>");
-    background-repeat: no-repeat;
-    background-position: right 4px center;
-    background-size: 12px;
-    padding-right: 24px;
-    cursor: pointer;
-  }
-  .field select option{
-    background: var(--ink-2);
-    color: var(--bone);
-  }
-  .field input:focus,
-  .field select:focus{
-    border-color: var(--gold);
-  }
-  .field input::placeholder{ color: var(--mute); }
+    /* ---------------- HERO ---------------- */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      min-height: 100svh;
+      display: flex;
+      align-items: center;
+      padding: 120px 0 80px;
+      overflow: hidden;
+      isolation: isolate;
+    }
 
-  .field-row{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
+    /* Cinematic background — layered gradients + light shaft */
+    .hero__bg {
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+      background:
+        radial-gradient(ellipse at 70% 20%, rgba(200, 165, 100, 0.18) 0%, transparent 45%),
+        radial-gradient(ellipse at 20% 80%, rgba(200, 165, 100, 0.06) 0%, transparent 50%),
+        linear-gradient(180deg, #0a0a0a 0%, #060606 100%);
+    }
 
-  .form-submit{
-    margin-top: 36px;
-    width: 100%;
-    justify-content: center;
-  }
-  .form-micro{
-    margin-top: 20px;
-    font-size: 11px;
-    color: var(--mute);
-    line-height: 1.6;
-    text-align: center;
-  }
+    .hero__bg::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+      background-size: 80px 80px;
+      mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+      -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+    }
 
-  /* Form success state */
-  .form-success{
-    display: none;
-    text-align: center;
-    padding: 24px 0;
-  }
-  .form-success.in{ display: block; }
-  .form-success__mark{
-    width: 64px; height: 64px;
-    border: 1px solid var(--gold);
-    border-radius: 50%;
-    margin: 0 auto 24px;
-    display: grid; place-items: center;
-    color: var(--gold);
-    font-family: var(--serif);
-    font-size: 28px;
-  }
-  .form-success h3{
-    font-family: var(--serif);
-    font-size: 28px;
-    font-weight: 400;
-    margin: 0 0 12px;
-  }
-  .form-success p{
-    color: var(--bone-dim);
-    margin: 0;
-    font-size: 14px;
-  }
+    /* Animated light shaft */
+    .hero__shaft {
+      position: absolute;
+      top: -10%;
+      right: -5%;
+      width: 60%;
+      height: 130%;
+      background: linear-gradient(110deg, transparent 40%, rgba(200, 165, 100, 0.08) 50%, transparent 60%);
+      transform: rotate(8deg);
+      z-index: -1;
+      animation: drift 18s ease-in-out infinite alternate;
+    }
 
-  /* ---------------- FINAL CTA ---------------- */
-  .final{
-    text-align: center;
-    padding: clamp(120px, 18vw, 220px) 0;
-    position: relative;
-    overflow: hidden;
-    background: var(--ink);
-  }
-  .final::before{
-    content:"";
-    position: absolute;
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
-    width: 140%; height: 200%;
-    background:
-      radial-gradient(ellipse at center, rgba(200,165,100,0.12) 0%, transparent 35%);
-    pointer-events: none;
-  }
-  .final__title{
-    font-size: clamp(40px, 7vw, 96px);
-    margin: 0 auto 32px;
-    max-width: 16ch;
-    position: relative;
-  }
-  .final__sub{
-    font-family: var(--serif);
-    font-style: italic;
-    font-size: clamp(20px, 2.4vw, 28px);
-    color: var(--bone-dim);
-    margin: 0 auto 48px;
-    max-width: 30ch;
-    line-height: 1.4;
-    position: relative;
-  }
-  .final__cta{ position: relative; }
+    @keyframes drift {
+      0% {
+        transform: translateX(0) rotate(8deg);
+        opacity: .7;
+      }
 
-  /* ---------------- FOOTER ---------------- */
-  footer{
-    border-top: 1px solid var(--line);
-    padding: 80px 0 40px;
-    background: #060606;
-  }
-  .footer__top{
-    display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr 1fr;
-    gap: 48px;
-    margin-bottom: 80px;
-  }
-  .footer__brand-name{
-    font-family: var(--serif);
-    font-size: clamp(28px, 3.2vw, 40px);
-    line-height: 1.05;
-    font-weight: 400;
-    margin: 0 0 16px;
-  }
-  .footer__tagline{
-    font-size: 13px;
-    color: var(--mute);
-    line-height: 1.7;
-    max-width: 32ch;
-  }
-  .footer__col h4{
-    font-size: 10px;
-    letter-spacing: 0.32em;
-    text-transform: uppercase;
-    color: var(--gold);
-    margin: 0 0 24px;
-    font-weight: 500;
-  }
-  .footer__col ul{
-    list-style: none; margin: 0; padding: 0;
-    display: grid; gap: 12px;
-  }
-  .footer__col a{
-    font-size: 13px;
-    color: var(--bone-dim);
-    transition: color .3s var(--ease);
-  }
-  .footer__col a:hover{ color: var(--gold); }
-  .footer__bottom{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 32px;
-    border-top: 1px solid var(--line);
-    font-size: 11px;
-    color: var(--mute);
-    letter-spacing: 0.06em;
-    gap: 16px;
-    flex-wrap: wrap;
-  }
-  .footer__bottom .made{
-    font-family: var(--serif);
-    font-style: italic;
-    color: var(--gold-soft);
-  }
+      100% {
+        transform: translateX(-40px) rotate(8deg);
+        opacity: 1;
+      }
+    }
 
-  /* Sticky mobile CTA */
-  .sticky-cta{
-    display: none;
-    position: fixed;
-    bottom: 16px; left: 16px; right: 16px;
-    z-index: 90;
-    background: var(--gold);
-    color: var(--ink);
-    padding: 16px;
-    text-align: center;
-    font-size: 11px;
-    letter-spacing: 0.26em;
-    text-transform: uppercase;
-    font-weight: 600;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.6);
-  }
+    .hero__inner {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 60px;
+    }
 
-  /* ---------------- RESPONSIVE ---------------- */
-  @media (max-width: 1024px){
-    .nav__menu{ display: none; }
-    .nav__burger{ display: inline-block; }
-    .status{ grid-template-columns: repeat(2, 1fr); gap: 24px; }
-    .compare{ grid-template-columns: repeat(2, 1fr); }
-    .compare__cell{ border-bottom: 1px solid var(--line); }
-    .compare__cell:nth-child(2){ border-right: none; }
-    .compare__cell:nth-child(3),
-    .compare__cell:nth-child(4){ border-bottom: none; }
-    .lab__grid{ grid-template-columns: repeat(2, 1fr); }
-    .stakes__grid{ grid-template-columns: repeat(2, 1fr); }
-    .credibility{ grid-template-columns: repeat(2, 1fr); }
-    .cred{ border-bottom: 1px solid var(--line); }
-    .cred:nth-child(2){ border-right: none; }
-    .cred:nth-child(3),
-    .cred:nth-child(4){ border-bottom: none; }
-    .what, .why, .video-soon, .form-wrap{ grid-template-columns: 1fr; gap: 48px; }
-    .what__art{ aspect-ratio: 4 / 3; max-width: 520px; }
-    .video-soon__visual{ max-width: 560px; }
-    .section__head{ grid-template-columns: 1fr; gap: 24px; }
-  }
+    .hero__top {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      margin-bottom: 8px;
+    }
 
-  @media (max-width: 720px){
-    .paths{ grid-template-columns: 1fr; }
-    .compare{ grid-template-columns: 1fr; }
-    .compare__cell{ border-right: none; border-bottom: 1px solid var(--line); }
-    .compare__cell:last-child{ border-bottom: none; }
-    .lab__grid{ grid-template-columns: 1fr; }
-    .stakes__grid{ grid-template-columns: 1fr; }
-    .credibility{ grid-template-columns: 1fr; }
-    .cred{ border-right: none; border-bottom: 1px solid var(--line); }
-    .cred:last-child{ border-bottom: none; }
-    .field-row{ grid-template-columns: 1fr; }
-    .footer__top{ grid-template-columns: 1fr; gap: 40px; margin-bottom: 48px; }
-    .audience__verbs{ flex-direction: column; gap: 12px; }
-    .audience__verbs span::after{ display: none; }
-    .why__list li{ grid-template-columns: 40px 1fr; gap: 12px; padding: 20px 0; }
-    .hero__ctas{ flex-direction: column; align-items: stretch; }
-    .hero__ctas .btn{ justify-content: center; }
-    .nav__cta{ display: none; }
-    .sticky-cta{ display: block; }
-    body{ padding-bottom: 80px; }
-    .status{ grid-template-columns: 1fr; gap: 20px; }
-  }
+    .hero__top .line {
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(90deg, var(--gold), transparent);
+      max-width: 80px;
+    }
 
-  @media (prefers-reduced-motion: reduce){
-    *{ animation: none !important; transition: none !important; }
-    .reveal{ opacity: 1; transform: none; }
-  }
-</style>
+    .hero__top .meta {
+      font-size: 10px;
+      letter-spacing: 0.4em;
+      text-transform: uppercase;
+      color: var(--mute);
+    }
+
+    .hero__title {
+      font-size: clamp(48px, 9vw, 132px);
+      margin: 0 0 28px;
+      max-width: 14ch;
+    }
+
+    .hero__sub {
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: clamp(20px, 2.4vw, 30px);
+      font-weight: 300;
+      color: var(--bone-dim);
+      margin: 0 0 24px;
+      max-width: 36ch;
+      line-height: 1.3;
+    }
+
+    .hero__supporting {
+      font-size: 15px;
+      color: var(--mute);
+      max-width: 52ch;
+      line-height: 1.7;
+      margin: 0 0 44px;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      padding: 18px 32px;
+      font-size: 12px;
+      letter-spacing: 0.26em;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-family: var(--sans);
+      cursor: pointer;
+      border: none;
+      transition: all .5s var(--ease);
+      position: relative;
+      overflow: hidden;
+      background: transparent;
+    }
+
+    .btn--gold {
+      background: var(--gold);
+      color: var(--ink);
+    }
+
+    .btn--gold:hover {
+      background: var(--gold-soft);
+      transform: translateY(-2px);
+      box-shadow: 0 24px 60px -20px var(--gold-glow);
+    }
+
+    .btn--ghost {
+      color: var(--bone);
+      border: 1px solid var(--line-strong);
+    }
+
+    .btn--ghost:hover {
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+
+    .btn .arrow {
+      width: 22px;
+      height: 1px;
+      background: currentColor;
+      position: relative;
+      transition: width .4s var(--ease);
+    }
+
+    .btn .arrow::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: -3px;
+      width: 7px;
+      height: 7px;
+      border-top: 1px solid currentColor;
+      border-right: 1px solid currentColor;
+      transform: rotate(45deg);
+    }
+
+    .btn:hover .arrow {
+      width: 32px;
+    }
+
+    .hero__ctas {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 80px;
+    }
+
+    /* Status module */
+    .status {
+      border-top: 1px solid var(--line);
+      padding-top: 32px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 32px;
+    }
+
+    .status__item {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .status__label {
+      font-size: 10px;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--mute);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .status__dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--gold);
+      box-shadow: 0 0 12px var(--gold-glow);
+      animation: pulse 2.4s ease-in-out infinite;
+    }
+
+    .status__dot--mute {
+      background: var(--mute);
+      box-shadow: none;
+      animation: none;
+    }
+
+    @keyframes pulse {
+
+      0%,
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      50% {
+        opacity: .4;
+        transform: scale(0.85);
+      }
+    }
+
+    .status__value {
+      font-family: var(--serif);
+      font-size: 20px;
+      color: var(--bone);
+      font-weight: 400;
+    }
+
+    /* ---------------- SECTION COMMON ---------------- */
+    section {
+      position: relative;
+    }
+
+    .section {
+      padding: clamp(80px, 12vw, 160px) 0;
+      position: relative;
+    }
+
+    .section--bordered {
+      border-top: 1px solid var(--line);
+    }
+
+    .section__head {
+      margin-bottom: 64px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: end;
+    }
+
+    .section__head--center {
+      grid-template-columns: 1fr;
+      text-align: center;
+      max-width: 760px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .section__num {
+      font-family: var(--serif);
+      font-style: italic;
+      color: var(--gold);
+      font-size: 14px;
+      letter-spacing: 0.06em;
+    }
+
+    .section__title {
+      font-size: clamp(36px, 5.4vw, 76px);
+      margin: 12px 0 0;
+    }
+
+    .section__lede {
+      font-family: var(--serif);
+      font-size: clamp(18px, 2vw, 24px);
+      color: var(--bone-dim);
+      line-height: 1.4;
+      font-weight: 300;
+      margin: 0;
+    }
+
+    /* Reveal-on-scroll */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 1.1s var(--ease), transform 1.1s var(--ease);
+    }
+
+    .reveal.in {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal.delay-1 {
+      transition-delay: .1s;
+    }
+
+    .reveal.delay-2 {
+      transition-delay: .2s;
+    }
+
+    .reveal.delay-3 {
+      transition-delay: .3s;
+    }
+
+    .reveal.delay-4 {
+      transition-delay: .4s;
+    }
+
+    /* ---------------- TEASER ---------------- */
+    .teaser {
+      text-align: center;
+      padding: clamp(80px, 14vw, 180px) 0;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      position: relative;
+    }
+
+    .teaser::before,
+    .teaser::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      width: 1px;
+      height: 30px;
+      background: var(--gold);
+      transform: translateX(-50%);
+    }
+
+    .teaser::before {
+      top: -1px;
+    }
+
+    .teaser::after {
+      bottom: -1px;
+    }
+
+    .teaser__text {
+      font-family: var(--serif);
+      font-size: clamp(24px, 3.4vw, 44px);
+      line-height: 1.3;
+      font-weight: 300;
+      max-width: 22ch;
+      margin: 0 auto;
+    }
+
+    .teaser__text em {
+      font-style: italic;
+      color: var(--gold-soft);
+    }
+
+    /* ---------------- WHAT IS TNBB ---------------- */
+    .what {
+      display: grid;
+      grid-template-columns: 5fr 6fr;
+      gap: clamp(40px, 8vw, 120px);
+      align-items: center;
+    }
+
+    .what__art {
+      position: relative;
+      aspect-ratio: 4 / 5;
+      background:
+        radial-gradient(circle at 30% 30%, rgba(200, 165, 100, 0.15) 0%, transparent 50%),
+        linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+      border: 1px solid var(--line);
+      overflow: hidden;
+    }
+
+    .what__art::before {
+      content: "TNBB";
+      position: absolute;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      font-family: var(--serif);
+      font-size: clamp(80px, 14vw, 220px);
+      font-weight: 400;
+      color: transparent;
+      background: linear-gradient(180deg, var(--gold) 20%, rgba(200, 165, 100, 0.05) 90%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      letter-spacing: -0.03em;
+    }
+
+    .what__art::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(115deg, transparent 40%, rgba(255, 255, 255, 0.06) 50%, transparent 60%);
+      animation: shine 8s ease-in-out infinite;
+    }
+
+    @keyframes shine {
+
+      0%,
+      100% {
+        transform: translateX(-30%);
+      }
+
+      50% {
+        transform: translateX(30%);
+      }
+    }
+
+    .what__art .frame-corners span {
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      border-color: var(--gold);
+      border-style: solid;
+      border-width: 0;
+    }
+
+    .what__art .frame-corners span:nth-child(1) {
+      top: 16px;
+      left: 16px;
+      border-top-width: 1px;
+      border-left-width: 1px;
+    }
+
+    .what__art .frame-corners span:nth-child(2) {
+      top: 16px;
+      right: 16px;
+      border-top-width: 1px;
+      border-right-width: 1px;
+    }
+
+    .what__art .frame-corners span:nth-child(3) {
+      bottom: 16px;
+      left: 16px;
+      border-bottom-width: 1px;
+      border-left-width: 1px;
+    }
+
+    .what__art .frame-corners span:nth-child(4) {
+      bottom: 16px;
+      right: 16px;
+      border-bottom-width: 1px;
+      border-right-width: 1px;
+    }
+
+    .what__copy h2 {
+      font-size: clamp(32px, 4.4vw, 56px);
+      font-family: var(--serif);
+      font-weight: 400;
+      line-height: 1.05;
+      margin: 16px 0 28px;
+    }
+
+    .what__copy p {
+      font-size: 17px;
+      color: var(--bone-dim);
+      line-height: 1.7;
+      max-width: 52ch;
+    }
+
+    /* ---------------- COMPARISON ---------------- */
+    .compare {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .compare__cell {
+      padding: 56px 36px;
+      border-right: 1px solid var(--line);
+      position: relative;
+      transition: background .5s var(--ease);
+    }
+
+    .compare__cell:last-child {
+      border-right: none;
+    }
+
+    .compare__cell:hover {
+      background: rgba(200, 165, 100, 0.03);
+    }
+
+    .compare__cell--final {
+      background: linear-gradient(180deg, rgba(200, 165, 100, 0.06), transparent);
+    }
+
+    .compare__label {
+      font-size: 11px;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--mute);
+      margin-bottom: 24px;
+    }
+
+    .compare__final-label {
+      color: var(--gold);
+    }
+
+    .compare__stmt {
+      font-family: var(--serif);
+      font-size: clamp(20px, 2.2vw, 28px);
+      line-height: 1.25;
+      font-weight: 400;
+    }
+
+    .compare__stmt em {
+      font-style: italic;
+      color: var(--gold-soft);
+      display: block;
+      margin-top: 6px;
+    }
+
+    .compare__stmt strong {
+      color: var(--bone);
+      font-weight: 400;
+      border-bottom: 1px solid var(--gold);
+      padding-bottom: 2px;
+    }
+
+    /* ---------------- BRAND LAB ---------------- */
+    .lab {
+      position: relative;
+      padding: clamp(100px, 14vw, 180px) 0;
+      background:
+        radial-gradient(ellipse at 50% 0%, rgba(200, 165, 100, 0.12) 0%, transparent 40%),
+        linear-gradient(180deg, #060606 0%, #0a0a0a 100%);
+      overflow: hidden;
+    }
+
+    .lab::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(200, 165, 100, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(200, 165, 100, 0.04) 1px, transparent 1px);
+      background-size: 60px 60px;
+      mask-image: radial-gradient(ellipse at center, black, transparent 70%);
+      -webkit-mask-image: radial-gradient(ellipse at center, black, transparent 70%);
+      pointer-events: none;
+    }
+
+    .lab__head {
+      text-align: center;
+      margin-bottom: 80px;
+      position: relative;
+    }
+
+    .lab__title {
+      font-size: clamp(48px, 7.5vw, 110px);
+      margin: 16px 0 24px;
+    }
+
+    .lab__lede {
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: clamp(18px, 2vw, 24px);
+      color: var(--bone-dim);
+      max-width: 30ch;
+      margin: 0 auto;
+      line-height: 1.4;
+    }
+
+    .lab__grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: var(--line);
+      border: 1px solid var(--line);
+      position: relative;
+    }
+
+    .lab__pill {
+      background: var(--ink-2);
+      padding: 40px 28px;
+      text-align: center;
+      transition: all .5s var(--ease);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .lab__pill::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 0;
+      height: 1px;
+      background: var(--gold);
+      transform: translateX(-50%);
+      transition: width .5s var(--ease);
+    }
+
+    .lab__pill:hover {
+      background: var(--ink-3);
+    }
+
+    .lab__pill:hover::before {
+      width: 60%;
+    }
+
+    .lab__pill .num {
+      font-family: var(--serif);
+      font-style: italic;
+      color: var(--gold);
+      font-size: 12px;
+      margin-bottom: 16px;
+      display: block;
+    }
+
+    .lab__pill .name {
+      font-family: var(--serif);
+      font-size: clamp(20px, 2vw, 26px);
+      font-weight: 400;
+      line-height: 1.1;
+    }
+
+    /* ---------------- PATHS ---------------- */
+    .paths {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .path {
+      position: relative;
+      padding: 48px 44px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent);
+      border: 1px solid var(--line);
+      transition: all .6s var(--ease);
+      overflow: hidden;
+      min-height: 360px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .path::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+      transform: translateX(-100%);
+      transition: transform .8s var(--ease);
+    }
+
+    .path:hover::before {
+      transform: translateX(0);
+    }
+
+    .path:hover {
+      border-color: var(--line-strong);
+      background: linear-gradient(180deg, rgba(200, 165, 100, 0.04), transparent);
+      transform: translateY(-3px);
+    }
+
+    .path__num {
+      font-family: var(--serif);
+      font-style: italic;
+      color: var(--gold);
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .path__title {
+      font-family: var(--serif);
+      font-size: clamp(28px, 3vw, 38px);
+      font-weight: 400;
+      line-height: 1.05;
+      margin: 0 0 20px;
+    }
+
+    .path__copy {
+      font-size: 15px;
+      color: var(--bone-dim);
+      line-height: 1.7;
+      margin: 0 0 32px;
+      flex: 1;
+    }
+
+    .path__cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      font-size: 11px;
+      letter-spacing: 0.26em;
+      text-transform: uppercase;
+      color: var(--gold);
+      cursor: pointer;
+      background: transparent;
+      border: none;
+      padding: 0;
+      font-family: var(--sans);
+      font-weight: 500;
+      align-self: flex-start;
+      transition: color .3s var(--ease);
+    }
+
+    .path__cta:hover {
+      color: var(--gold-soft);
+    }
+
+    .path__cta .arrow {
+      width: 22px;
+      height: 1px;
+      background: currentColor;
+      position: relative;
+      transition: width .4s var(--ease);
+    }
+
+    .path__cta .arrow::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: -3px;
+      width: 6px;
+      height: 6px;
+      border-top: 1px solid currentColor;
+      border-right: 1px solid currentColor;
+      transform: rotate(45deg);
+    }
+
+    .path__cta:hover .arrow {
+      width: 32px;
+    }
+
+    /* ---------------- AUDIENCE ---------------- */
+    .audience {
+      text-align: center;
+      padding: clamp(100px, 14vw, 180px) 0;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      background: radial-gradient(ellipse at center, rgba(200, 165, 100, 0.05) 0%, transparent 60%);
+    }
+
+    .audience__title {
+      font-size: clamp(36px, 5.5vw, 76px);
+      margin: 16px auto 28px;
+      max-width: 18ch;
+    }
+
+    .audience__copy {
+      font-size: 17px;
+      color: var(--bone-dim);
+      max-width: 52ch;
+      margin: 0 auto 60px;
+      line-height: 1.7;
+    }
+
+    .audience__verbs {
+      display: flex;
+      justify-content: center;
+      gap: clamp(20px, 5vw, 60px);
+      flex-wrap: wrap;
+    }
+
+    .audience__verbs span {
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: clamp(24px, 3vw, 40px);
+      color: var(--bone);
+      position: relative;
+      padding: 0 4px;
+      transition: color .3s var(--ease);
+      cursor: default;
+    }
+
+    .audience__verbs span::after {
+      content: "·";
+      position: absolute;
+      right: -32px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--gold);
+      font-size: 0.7em;
+    }
+
+    .audience__verbs span:last-child::after {
+      display: none;
+    }
+
+    .audience__verbs span:hover {
+      color: var(--gold-soft);
+    }
+
+    /* ---------------- WHY NOW ---------------- */
+    .why {
+      display: grid;
+      grid-template-columns: 5fr 7fr;
+      gap: clamp(40px, 8vw, 120px);
+      align-items: start;
+    }
+
+    .why__list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      counter-reset: why;
+    }
+
+    .why__list li {
+      counter-increment: why;
+      padding: 28px 0;
+      border-bottom: 1px solid var(--line);
+      font-family: var(--serif);
+      font-size: clamp(20px, 2.2vw, 28px);
+      line-height: 1.3;
+      font-weight: 300;
+      display: grid;
+      grid-template-columns: 60px 1fr;
+      gap: 24px;
+      align-items: baseline;
+      transition: padding .4s var(--ease);
+    }
+
+    .why__list li:first-child {
+      border-top: 1px solid var(--line);
+    }
+
+    .why__list li:hover {
+      padding-left: 12px;
+    }
+
+    .why__list li::before {
+      content: "0" counter(why);
+      font-family: var(--serif);
+      font-style: italic;
+      color: var(--gold);
+      font-size: 14px;
+    }
+
+    .why__list em {
+      font-style: italic;
+      color: var(--gold-soft);
+    }
+
+    /* ---------------- STAKES ---------------- */
+    .stakes {
+      background: linear-gradient(180deg, #060606 0%, #0a0a0a 100%);
+      padding: clamp(100px, 14vw, 180px) 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .stakes::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 800px;
+      height: 800px;
+      background: radial-gradient(circle, var(--gold-glow) 0%, transparent 60%);
+      filter: blur(60px);
+      pointer-events: none;
+      opacity: 0.5;
+    }
+
+    .stakes__head {
+      text-align: center;
+      margin-bottom: 80px;
+      position: relative;
+    }
+
+    .stakes__grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      position: relative;
+    }
+
+    .stake {
+      padding: 48px 28px;
+      text-align: center;
+      border: 1px solid var(--line);
+      margin-right: -1px;
+      margin-bottom: -1px;
+      background: rgba(10, 10, 10, 0.6);
+      backdrop-filter: blur(8px);
+      transition: all .5s var(--ease);
+      position: relative;
+    }
+
+    .stake:hover {
+      background: rgba(200, 165, 100, 0.04);
+      border-color: var(--line-strong);
+      z-index: 1;
+    }
+
+    .stake__icon {
+      width: 32px;
+      height: 32px;
+      margin: 0 auto 20px;
+      display: grid;
+      place-items: center;
+      color: var(--gold);
+    }
+
+    .stake__icon svg {
+      width: 24px;
+      height: 24px;
+    }
+
+    .stake__text {
+      font-family: var(--serif);
+      font-size: 20px;
+      line-height: 1.2;
+      font-weight: 400;
+    }
+
+    .stake--final {
+      background: linear-gradient(180deg, rgba(200, 165, 100, 0.08), rgba(200, 165, 100, 0.02));
+      border-color: var(--gold-deep);
+    }
+
+    .stake--final .stake__text em {
+      font-style: italic;
+      color: var(--gold-soft);
+      display: block;
+    }
+
+    /* ---------------- VIDEO SOON ---------------- */
+    .video-soon {
+      display: grid;
+      grid-template-columns: 5fr 7fr;
+      gap: clamp(40px, 8vw, 100px);
+      align-items: center;
+    }
+
+    .video-soon__visual {
+      position: relative;
+      aspect-ratio: 4 / 3;
+      background:
+        radial-gradient(circle at 70% 30%, rgba(200, 165, 100, 0.18) 0%, transparent 60%),
+        linear-gradient(135deg, #181818 0%, #080808 100%);
+      border: 1px solid var(--line);
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+    }
+
+    .video-soon__visual::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+      background-size: 30px 30px;
+    }
+
+    .play-mark {
+      width: 100px;
+      height: 100px;
+      border: 1px solid var(--gold);
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      position: relative;
+      z-index: 1;
+      transition: all .5s var(--ease);
+      cursor: pointer;
+    }
+
+    .play-mark::before {
+      content: "";
+      position: absolute;
+      inset: -8px;
+      border: 1px solid var(--gold-deep);
+      border-radius: 50%;
+      opacity: 0.5;
+    }
+
+    .play-mark::after {
+      content: "";
+      width: 0;
+      height: 0;
+      border-left: 18px solid var(--gold);
+      border-top: 11px solid transparent;
+      border-bottom: 11px solid transparent;
+      margin-left: 5px;
+    }
+
+    .video-soon__visual:hover .play-mark {
+      transform: scale(1.05);
+      box-shadow: 0 0 60px var(--gold-glow);
+    }
+
+    .video-soon__timer {
+      position: absolute;
+      bottom: 24px;
+      left: 24px;
+      font-family: var(--serif);
+      font-style: italic;
+      color: var(--gold);
+      font-size: 14px;
+    }
+
+    .video-soon__rec {
+      position: absolute;
+      top: 24px;
+      right: 24px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 10px;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--bone-dim);
+    }
+
+    .video-soon__rec .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--gold);
+      animation: pulse 1.8s ease-in-out infinite;
+    }
+
+    .video-soon h2 {
+      font-family: var(--serif);
+      font-size: clamp(32px, 4.4vw, 56px);
+      font-weight: 400;
+      line-height: 1.05;
+      margin: 16px 0 28px;
+    }
+
+    .video-soon p {
+      font-size: 16px;
+      color: var(--bone-dim);
+      line-height: 1.7;
+      max-width: 50ch;
+      margin: 0 0 36px;
+    }
+
+    /* ---------------- CREDIBILITY ---------------- */
+    .credibility {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .cred {
+      padding: 56px 36px;
+      border-right: 1px solid var(--line);
+      text-align: left;
+    }
+
+    .cred:last-child {
+      border-right: none;
+    }
+
+    .cred__label {
+      font-size: 10px;
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+      color: var(--mute);
+      margin-bottom: 24px;
+    }
+
+    .cred__status {
+      font-family: var(--serif);
+      font-size: clamp(22px, 2.4vw, 30px);
+      font-style: italic;
+      color: var(--gold-soft);
+      font-weight: 400;
+      line-height: 1.15;
+    }
+
+    .cred__hint {
+      font-size: 12px;
+      color: var(--mute);
+      margin-top: 18px;
+      letter-spacing: 0.04em;
+    }
+
+    /* ---------------- FORM ---------------- */
+    .form-section {
+      background: linear-gradient(180deg, #060606 0%, #0a0a0a 100%);
+      padding: clamp(100px, 14vw, 180px) 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .form-section::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 1200px;
+      height: 1200px;
+      border-radius: 50%;
+      background: radial-gradient(circle, var(--gold-glow) 0%, transparent 60%);
+      filter: blur(80px);
+      opacity: 0.4;
+      pointer-events: none;
+    }
+
+    .form-wrap {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(40px, 6vw, 80px);
+      position: relative;
+      align-items: start;
+    }
+
+    .form-intro h2 {
+      font-family: var(--serif);
+      font-size: clamp(36px, 5vw, 64px);
+      font-weight: 400;
+      line-height: 1.05;
+      margin: 16px 0 28px;
+    }
+
+    .form-intro h2 em {
+      font-style: italic;
+      color: var(--gold-soft);
+    }
+
+    .form-intro p {
+      font-size: 16px;
+      color: var(--bone-dim);
+      line-height: 1.7;
+      margin: 0 0 32px;
+      max-width: 48ch;
+    }
+
+    .form-intro__perks {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 14px;
+    }
+
+    .form-intro__perks li {
+      font-size: 13px;
+      letter-spacing: 0.06em;
+      color: var(--bone-dim);
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .form-intro__perks li::before {
+      content: "";
+      width: 16px;
+      height: 1px;
+      background: var(--gold);
+      display: block;
+      flex-shrink: 0;
+    }
+
+    /* Form card — glassmorphic */
+    .form-card {
+      background: rgba(255, 255, 255, 0.025);
+      border: 1px solid var(--line-strong);
+      padding: clamp(32px, 4vw, 56px);
+      backdrop-filter: blur(20px) saturate(140%);
+      -webkit-backdrop-filter: blur(20px) saturate(140%);
+      position: relative;
+    }
+
+    .form-card::before {
+      content: "";
+      position: absolute;
+      top: -1px;
+      left: -1px;
+      right: -1px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    }
+
+    .form-card__head {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 32px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .form-card__head .dot {
+      width: 8px;
+      height: 8px;
+      background: var(--gold);
+      border-radius: 50%;
+      box-shadow: 0 0 12px var(--gold-glow);
+    }
+
+    .form-card__head span {
+      font-size: 11px;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--bone-dim);
+    }
+
+    .form-grid {
+      display: grid;
+      gap: 20px;
+    }
+
+    .field {
+      position: relative;
+    }
+
+    .field label {
+      display: block;
+      font-size: 10px;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--mute);
+      margin-bottom: 10px;
+    }
+
+    .field label .req {
+      color: var(--gold);
+    }
+
+    .field input,
+    .field select {
+      width: 100%;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid var(--line-strong);
+      padding: 12px 0;
+      color: var(--bone);
+      font-family: var(--sans);
+      font-size: 15px;
+      font-weight: 300;
+      outline: none;
+      transition: border-color .3s var(--ease);
+      -webkit-appearance: none;
+      appearance: none;
+    }
+
+    .field select {
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8' fill='none'><path d='M1 1l5 5 5-5' stroke='%23c8a564' stroke-width='1.5'/></svg>");
+      background-repeat: no-repeat;
+      background-position: right 4px center;
+      background-size: 12px;
+      padding-right: 24px;
+      cursor: pointer;
+    }
+
+    .field select option {
+      background: var(--ink-2);
+      color: var(--bone);
+    }
+
+    .field input:focus,
+    .field select:focus {
+      border-color: var(--gold);
+    }
+
+    .field input::placeholder {
+      color: var(--mute);
+    }
+
+    .field-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .form-submit {
+      margin-top: 36px;
+      width: 100%;
+      justify-content: center;
+    }
+
+    .form-micro {
+      margin-top: 20px;
+      font-size: 11px;
+      color: var(--mute);
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    /* Form success state */
+    .form-success {
+      display: none;
+      text-align: center;
+      padding: 24px 0;
+    }
+
+    .form-success.in {
+      display: block;
+    }
+
+    .form-success__mark {
+      width: 64px;
+      height: 64px;
+      border: 1px solid var(--gold);
+      border-radius: 50%;
+      margin: 0 auto 24px;
+      display: grid;
+      place-items: center;
+      color: var(--gold);
+      font-family: var(--serif);
+      font-size: 28px;
+    }
+
+    .form-success h3 {
+      font-family: var(--serif);
+      font-size: 28px;
+      font-weight: 400;
+      margin: 0 0 12px;
+    }
+
+    .form-success p {
+      color: var(--bone-dim);
+      margin: 0;
+      font-size: 14px;
+    }
+
+    /* ---------------- FINAL CTA ---------------- */
+    .final {
+      text-align: center;
+      padding: clamp(120px, 18vw, 220px) 0;
+      position: relative;
+      overflow: hidden;
+      background: var(--ink);
+    }
+
+    .final::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 140%;
+      height: 200%;
+      background:
+        radial-gradient(ellipse at center, rgba(200, 165, 100, 0.12) 0%, transparent 35%);
+      pointer-events: none;
+    }
+
+    .final__title {
+      font-size: clamp(40px, 7vw, 96px);
+      margin: 0 auto 32px;
+      max-width: 16ch;
+      position: relative;
+    }
+
+    .final__sub {
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: clamp(20px, 2.4vw, 28px);
+      color: var(--bone-dim);
+      margin: 0 auto 48px;
+      max-width: 30ch;
+      line-height: 1.4;
+      position: relative;
+    }
+
+    .final__cta {
+      position: relative;
+    }
+
+    /* ---------------- FOOTER ---------------- */
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 80px 0 40px;
+      background: #060606;
+    }
+
+    .footer__top {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1fr;
+      gap: 48px;
+      margin-bottom: 80px;
+    }
+
+    .footer__brand-name {
+      font-family: var(--serif);
+      font-size: clamp(28px, 3.2vw, 40px);
+      line-height: 1.05;
+      font-weight: 400;
+      margin: 0 0 16px;
+    }
+
+    .footer__tagline {
+      font-size: 13px;
+      color: var(--mute);
+      line-height: 1.7;
+      max-width: 32ch;
+    }
+
+    .footer__col h4 {
+      font-size: 10px;
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin: 0 0 24px;
+      font-weight: 500;
+    }
+
+    .footer__col ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 12px;
+    }
+
+    .footer__col a {
+      font-size: 13px;
+      color: var(--bone-dim);
+      transition: color .3s var(--ease);
+    }
+
+    .footer__col a:hover {
+      color: var(--gold);
+    }
+
+    .footer__bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 32px;
+      border-top: 1px solid var(--line);
+      font-size: 11px;
+      color: var(--mute);
+      letter-spacing: 0.06em;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .footer__bottom .made {
+      font-family: var(--serif);
+      font-style: italic;
+      color: var(--gold-soft);
+    }
+
+    /* Sticky mobile CTA */
+    .sticky-cta {
+      display: none;
+      position: fixed;
+      bottom: 16px;
+      left: 16px;
+      right: 16px;
+      z-index: 90;
+      background: var(--gold);
+      color: var(--ink);
+      padding: 16px;
+      text-align: center;
+      font-size: 11px;
+      letter-spacing: 0.26em;
+      text-transform: uppercase;
+      font-weight: 600;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+    }
+
+    /* ---------------- RESPONSIVE ---------------- */
+    @media (max-width: 1024px) {
+      .nav__menu {
+        display: none;
+      }
+
+      .nav__burger {
+        display: inline-block;
+      }
+
+      .status {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+      }
+
+      .compare {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .compare__cell {
+        border-bottom: 1px solid var(--line);
+      }
+
+      .compare__cell:nth-child(2) {
+        border-right: none;
+      }
+
+      .compare__cell:nth-child(3),
+      .compare__cell:nth-child(4) {
+        border-bottom: none;
+      }
+
+      .lab__grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .stakes__grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .credibility {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .cred {
+        border-bottom: 1px solid var(--line);
+      }
+
+      .cred:nth-child(2) {
+        border-right: none;
+      }
+
+      .cred:nth-child(3),
+      .cred:nth-child(4) {
+        border-bottom: none;
+      }
+
+      .what,
+      .why,
+      .video-soon,
+      .form-wrap {
+        grid-template-columns: 1fr;
+        gap: 48px;
+      }
+
+      .what__art {
+        aspect-ratio: 4 / 3;
+        max-width: 520px;
+      }
+
+      .video-soon__visual {
+        max-width: 560px;
+      }
+
+      .section__head {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .paths {
+        grid-template-columns: 1fr;
+      }
+
+      .compare {
+        grid-template-columns: 1fr;
+      }
+
+      .compare__cell {
+        border-right: none;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .compare__cell:last-child {
+        border-bottom: none;
+      }
+
+      .lab__grid {
+        grid-template-columns: 1fr;
+      }
+
+      .stakes__grid {
+        grid-template-columns: 1fr;
+      }
+
+      .credibility {
+        grid-template-columns: 1fr;
+      }
+
+      .cred {
+        border-right: none;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .cred:last-child {
+        border-bottom: none;
+      }
+
+      .field-row {
+        grid-template-columns: 1fr;
+      }
+
+      .footer__top {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        margin-bottom: 48px;
+      }
+
+      .audience__verbs {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .audience__verbs span::after {
+        display: none;
+      }
+
+      .why__list li {
+        grid-template-columns: 40px 1fr;
+        gap: 12px;
+        padding: 20px 0;
+      }
+
+      .hero__ctas {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .hero__ctas .btn {
+        justify-content: center;
+      }
+
+      .nav__cta {
+        display: none;
+      }
+
+      .sticky-cta {
+        display: block;
+      }
+
+      body {
+        padding-bottom: 80px;
+      }
+
+      .status {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        animation: none !important;
+        transition: none !important;
+      }
+
+      .reveal {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-<!-- ============== NAV ============== -->
-<header class="nav" id="nav">
-  <div class="wrap nav__inner">
-    <a href="#top" class="brand" aria-label="The Next Big Brand">
-      <span class="brand__mark"><span>N</span></span>
-      <span>The Next Big Brand</span>
-    </a>
-    <nav class="nav__menu" aria-label="Primary">
-      <a href="#show">The Show</a>
-      <a href="#lab">The Brand Lab</a>
-      <a href="#paths">Entrepreneurs</a>
-      <a href="#paths">Sponsors</a>
-      <a href="#paths">Investors</a>
-    </nav>
-    <a href="#join" class="nav__cta">Join the List</a>
-    <button class="nav__burger" aria-label="Open menu" id="burger">
-      <span></span><span></span>
-    </button>
-  </div>
-</header>
+  <!-- ============== NAV ============== -->
+  <header class="nav" id="nav">
+    <div class="wrap nav__inner">
+      <a href="#top" class="brand" aria-label="The Next Big Brand">
+        <span class="brand__mark"><span>N</span></span>
+        <span>The Next Big Brand</span>
+      </a>
+      <nav class="nav__menu" aria-label="Primary">
+        <a href="#show">The Show</a>
+        <a href="#lab">The Brand Lab</a>
+        <a href="#paths">Entrepreneurs</a>
+        <a href="#paths">Sponsors</a>
+        <a href="#paths">Investors</a>
+      </nav>
+      <a href="#join" class="nav__cta">Join the List</a>
+      <button class="nav__burger" aria-label="Open menu" id="burger">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
 
-<!-- ============== HERO ============== -->
-<section class="hero" id="top">
-  <div class="hero__bg"></div>
-  <div class="hero__shaft"></div>
-  <div class="wrap hero__inner">
-    <div>
-      <div class="hero__top reveal">
-        <span class="line"></span>
-        <span class="meta">A Schneider Cinema Original</span>
-        <span class="line" style="background: linear-gradient(270deg, var(--gold), transparent);"></span>
+  <!-- ============== HERO ============== -->
+  <section class="hero" id="top">
+    <div class="hero__bg"></div>
+    <div class="hero__shaft"></div>
+    <div class="wrap hero__inner">
+      <div>
+        <div class="hero__top reveal">
+          <span class="line"></span>
+          <span class="meta">A Schneider Cinema Original</span>
+          <span class="line" style="background: linear-gradient(270deg, var(--gold), transparent);"></span>
+        </div>
+
+        <h1 class="hero__title display reveal delay-1">
+          The Next<br>Big Brand<br><em>Is Coming.</em>
+        </h1>
+
+        <p class="hero__sub reveal delay-2">
+          8 bold entrepreneurs. 8 intense weeks.<br>One brand will rise.
+        </p>
+
+        <p class="hero__supporting reveal delay-3">
+          A disruptive reality competition where unknown entrepreneurs build real brands under pressure — shaped by
+          moguls, challenged by the market, and decided by the public.
+        </p>
+
+        <div class="hero__ctas reveal delay-4">
+          <a href="#join" class="btn btn--gold">
+            Join the Insider List <span class="arrow"></span>
+          </a>
+          <a href="#show" class="btn btn--ghost">
+            Explore the Opportunity <span class="arrow"></span>
+          </a>
+        </div>
+
+        <div class="status reveal delay-4" role="region" aria-label="Project status">
+          <div class="status__item">
+            <div class="status__label"><span class="status__dot"></span>Status</div>
+            <div class="status__value">Early Access</div>
+          </div>
+          <div class="status__item">
+            <div class="status__label"><span class="status__dot status__dot--mute"></span>Official Enrollment</div>
+            <div class="status__value">Opening Soon</div>
+          </div>
+          <div class="status__item">
+            <div class="status__label"><span class="status__dot"></span>Sponsor Conversations</div>
+            <div class="status__value">Now Open</div>
+          </div>
+          <div class="status__item">
+            <div class="status__label"><span class="status__dot status__dot--mute"></span>Investor Updates</div>
+            <div class="status__value">By Request</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== TEASER ============== -->
+  <section class="teaser">
+    <div class="wrap">
+      <p class="teaser__text reveal">
+        This is <em>not</em> just another business show.<br>
+        This is a live brand-building arena where entrepreneurs don't just pitch and leave — they build, compete, adapt,
+        and <em>survive</em>.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============== WHAT IS TNBB ============== -->
+  <section class="section" id="show">
+    <div class="wrap">
+      <div class="what">
+        <div class="what__art reveal">
+          <div class="frame-corners"><span></span><span></span><span></span><span></span></div>
+        </div>
+        <div class="what__copy reveal delay-1">
+          <span class="eyebrow">— 01 / The Format</span>
+          <h2>A premium entrepreneurship reality show. Built live.</h2>
+          <p>
+            THE NEXT BIG BRAND is a premium entrepreneurship reality show where unknown founders compete to transform
+            bold ideas into real brands — through branding, sales, marketing, finance, storytelling, leadership, social
+            media, and resilience challenges.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== COMPARISON ============== -->
+  <section class="section section--bordered">
+    <div class="wrap">
+      <div class="section__head section__head--center reveal">
+        <div>
+          <span class="eyebrow">— 02 / Positioning</span>
+          <h2 class="section__title display">Unlike anything before it.</h2>
+        </div>
+      </div>
+    </div>
+    <div class="compare reveal">
+      <div class="compare__cell">
+        <div class="compare__label">Shark Tank</div>
+        <p class="compare__stmt">They pitch <strong>and leave</strong>.</p>
+      </div>
+      <div class="compare__cell">
+        <div class="compare__label">The Apprentice</div>
+        <p class="compare__stmt">They just <strong>execute</strong>.</p>
+      </div>
+      <div class="compare__cell">
+        <div class="compare__label">Big Brother</div>
+        <p class="compare__stmt">They just <strong>survive</strong>.</p>
+      </div>
+      <div class="compare__cell compare__cell--final">
+        <div class="compare__label compare__final-label">The Next Big Brand</div>
+        <p class="compare__stmt">They build<em>a real brand.</em></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== BRAND LAB ============== -->
+  <section class="lab" id="lab">
+    <div class="wrap">
+      <div class="lab__head reveal">
+        <span class="eyebrow">— 03 / The Arena</span>
+        <h2 class="lab__title display">Enter The <em>Brand Lab</em>.</h2>
+        <p class="lab__lede">A controlled business arena where founders are tested, brands are exposed, and only the
+          strongest survive.</p>
       </div>
 
-      <h1 class="hero__title display reveal delay-1">
-        The Next<br>Big Brand<br><em>Is Coming.</em>
-      </h1>
+      <div class="lab__grid reveal delay-1">
+        <div class="lab__pill"><span class="num">i.</span>
+          <div class="name">Branding</div>
+        </div>
+        <div class="lab__pill"><span class="num">ii.</span>
+          <div class="name">Sales</div>
+        </div>
+        <div class="lab__pill"><span class="num">iii.</span>
+          <div class="name">Marketing</div>
+        </div>
+        <div class="lab__pill"><span class="num">iv.</span>
+          <div class="name">Finance</div>
+        </div>
+        <div class="lab__pill"><span class="num">v.</span>
+          <div class="name">Storytelling</div>
+        </div>
+        <div class="lab__pill"><span class="num">vi.</span>
+          <div class="name">Leadership</div>
+        </div>
+        <div class="lab__pill"><span class="num">vii.</span>
+          <div class="name">Social Media</div>
+        </div>
+        <div class="lab__pill"><span class="num">viii.</span>
+          <div class="name">Resilience</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      <p class="hero__sub reveal delay-2">
-        8 bold entrepreneurs. 8 intense weeks.<br>One brand will rise.
+  <!-- ============== PATHS ============== -->
+  <section class="section" id="paths">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <div>
+          <span class="eyebrow">— 04 / Choose Your Path</span>
+          <h2 class="section__title display">Find your<br><em>way in.</em></h2>
+        </div>
+        <p class="section__lede">Four ways to engage with TNBB before the doors officially open — for founders, brands,
+          investors, and the audience shaping it all.</p>
+      </div>
+
+      <div class="paths">
+        <article class="path reveal">
+          <div class="path__num">— 01 / Entrepreneurs</div>
+          <h3 class="path__title">For Entrepreneurs <em>&amp; Candidates</em></h3>
+          <p class="path__copy">Think your idea has what it takes to become a household name? Join the early list for
+            official enrollment updates. Selected candidates may later be invited to submit a 60-second video explaining
+            why they deserve a shot inside The Brand Lab.</p>
+          <button class="path__cta" data-interest="Entrepreneur / Candidate">Join Candidate Updates <span
+              class="arrow"></span></button>
+        </article>
+
+        <article class="path reveal delay-1">
+          <div class="path__num">— 02 / Sponsors</div>
+          <h3 class="path__title">For Sponsors <em>&amp; Brands</em></h3>
+          <p class="path__copy">TNBB is designed for premium brand integration, sponsored challenges, product placement,
+            storytelling, audience activation, and cultural relevance inside a business-driven entertainment format.</p>
+          <button class="path__cta" data-interest="Sponsor / Brand Partner">Explore Sponsorship Interest <span
+              class="arrow"></span></button>
+        </article>
+
+        <article class="path reveal delay-2">
+          <div class="path__num">— 03 / Investors</div>
+          <h3 class="path__title">For Investors <em>&amp; Partners</em></h3>
+          <p class="path__copy">TNBB is built as a scalable entertainment IP with franchise, sponsorship, licensing,
+            audience engagement, and brand royalty potential.</p>
+          <button class="path__cta" data-interest="Investor / Strategic Partner">Request Partner Updates <span
+              class="arrow"></span></button>
+        </article>
+
+        <article class="path reveal delay-3">
+          <div class="path__num">— 04 / Viewers</div>
+          <h3 class="path__title">For <em>Viewers</em></h3>
+          <p class="path__copy">Follow the journey before the doors open. Watch the rise of unknown entrepreneurs as
+            they fight to become the next breakout brand.</p>
+          <button class="path__cta" data-interest="Viewer / Fan">Follow the Journey <span class="arrow"></span></button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== AUDIENCE ============== -->
+  <section class="audience">
+    <div class="wrap">
+      <span class="eyebrow reveal">— 05 / The Audience</span>
+      <h2 class="audience__title display reveal delay-1">
+        The audience won't just watch.<br><em>They'll help decide.</em>
+      </h2>
+      <p class="audience__copy reveal delay-2">
+        Viewers will follow the journey, engage with the founders, react to the challenges, and help shape who deserves
+        to become The Next Big Brand.
       </p>
+      <div class="audience__verbs reveal delay-3">
+        <span>Vote</span>
+        <span>React</span>
+        <span>Follow</span>
+        <span>Share</span>
+        <span>Decide</span>
+      </div>
+    </div>
+  </section>
 
-      <p class="hero__supporting reveal delay-3">
-        A disruptive reality competition where unknown entrepreneurs build real brands under pressure — shaped by moguls, challenged by the market, and decided by the public.
+  <!-- ============== WHY NOW ============== -->
+  <section class="section">
+    <div class="wrap">
+      <div class="why">
+        <div class="reveal">
+          <span class="eyebrow">— 06 / The Timing</span>
+          <h2 class="section__title display" style="margin-top:12px">Why <em>Now</em>.</h2>
+          <p style="font-size:16px; color:var(--bone-dim); margin-top:32px; max-width:42ch; line-height:1.7;">
+            TNBB sits at the intersection of ambition, innovation, business, entertainment, and interactive viewing.
+          </p>
+        </div>
+        <ol class="why__list reveal delay-1">
+          <li>Entrepreneurship is <em>culture</em>.</li>
+          <li>Founders are the new <em>public figures</em>.</li>
+          <li>AI and the creator economy have <em>lowered the barrier</em> to launch.</li>
+          <li>Millions can start. <em>Few</em> know how to scale.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== STAKES ============== -->
+  <section class="stakes">
+    <div class="wrap">
+      <div class="stakes__head reveal">
+        <span class="eyebrow">— 07 / The Stakes</span>
+        <h2 class="section__title display" style="margin-top:12px;">What's <em>on the line.</em></h2>
+      </div>
+
+      <div class="stakes__grid reveal delay-1">
+        <div class="stake">
+          <div class="stake__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <circle cx="12" cy="12" r="9" />
+              <path d="M9 9.5c.5-1 1.5-1.5 3-1.5s2.5.5 2.5 1.8c0 2.2-5.5 2-5.5 4.4 0 1.3 1 1.8 2.5 1.8s2.5-.5 3-1.5" />
+              <path d="M12 6v2M12 16v2" />
+            </svg>
+          </div>
+          <p class="stake__text">Cash prize</p>
+        </div>
+        <div class="stake">
+          <div class="stake__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <circle cx="12" cy="9" r="4" />
+              <path d="M5 21c0-3.9 3.1-7 7-7s7 3.1 7 7" />
+              <path d="M16 5l2-2M8 5L6 3" />
+            </svg>
+          </div>
+          <p class="stake__text">Mogul evaluation</p>
+        </div>
+        <div class="stake">
+          <div class="stake__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <path d="M3 12l4-4 4 4 4-4 6 6" />
+              <path d="M3 20h18" />
+            </svg>
+          </div>
+          <p class="stake__text">Public voting</p>
+        </div>
+        <div class="stake">
+          <div class="stake__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <circle cx="12" cy="12" r="9" />
+              <path d="M3 12h18M12 3c2.5 3 2.5 15 0 18M12 3c-2.5 3-2.5 15 0 18" />
+            </svg>
+          </div>
+          <p class="stake__text">National exposure</p>
+        </div>
+        <div class="stake">
+          <div class="stake__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <path d="M5 12l4 4 10-10" />
+              <circle cx="12" cy="12" r="9" />
+            </svg>
+          </div>
+          <p class="stake__text">Brand validation</p>
+        </div>
+        <div class="stake">
+          <div class="stake__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <rect x="3" y="5" width="18" height="14" rx="1" />
+              <path d="M3 9h18M8 5V3M16 5V3" />
+            </svg>
+          </div>
+          <p class="stake__text">Real business challenges</p>
+        </div>
+        <div class="stake stake--final">
+          <div class="stake__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4-6.2-4.6-6.2 4.6 2.4-7.4L2 9.4h7.6z" />
+            </svg>
+          </div>
+          <p class="stake__text">One winner.<em>One breakout brand.</em></p>
+        </div>
+        <div class="stake">
+          <div class="stake__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <circle cx="12" cy="12" r="3" />
+              <path d="M12 2v2M12 20v2M22 12h-2M4 12H2M18.4 5.6l-1.4 1.4M7 17l-1.4 1.4M18.4 18.4L17 17M7 7L5.6 5.6" />
+            </svg>
+          </div>
+          <p class="stake__text">National spotlight</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== VIDEO SOON ============== -->
+  <section class="section section--bordered">
+    <div class="wrap">
+      <div class="video-soon">
+        <div class="video-soon__visual reveal">
+          <div class="video-soon__rec"><span class="dot"></span>REC · COMING SOON</div>
+          <div class="play-mark"></div>
+          <div class="video-soon__timer">00:60</div>
+        </div>
+        <div class="reveal delay-1">
+          <span class="eyebrow">— 08 / Casting Preview</span>
+          <h2>Coming Soon: <em>60-Second</em> Founder Video Submission.</h2>
+          <p>
+            Official enrollment is not open yet. Soon, selected candidates will be invited to submit a one-minute video
+            explaining who they are, what they are building, and why they deserve a shot inside The Brand Lab.
+          </p>
+          <a href="#join" class="btn btn--ghost">
+            Be Notified When Enrollment Opens <span class="arrow"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== CREDIBILITY ============== -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section__head section__head--center reveal">
+        <div>
+          <span class="eyebrow">— 09 / Building Momentum</span>
+          <h2 class="section__title display">In <em>development.</em></h2>
+          <p class="section__lede" style="margin-top:24px">Every layer of TNBB is being assembled with intent. Updates
+            released as each phase opens.</p>
+        </div>
+      </div>
+    </div>
+    <div class="credibility reveal delay-1">
+      <div class="cred">
+        <div class="cred__label">Business Moguls</div>
+        <div class="cred__status">To be announced.</div>
+        <div class="cred__hint">Curated panel in formation.</div>
+      </div>
+      <div class="cred">
+        <div class="cred__label">Strategic Partners</div>
+        <div class="cred__status">Coming soon.</div>
+        <div class="cred__hint">Selected on cultural fit.</div>
+      </div>
+      <div class="cred">
+        <div class="cred__label">Official Enrollment</div>
+        <div class="cred__status">Opening soon.</div>
+        <div class="cred__hint">Insider list opens first.</div>
+      </div>
+      <div class="cred">
+        <div class="cred__label">Media &amp; Sponsor Updates</div>
+        <div class="cred__status">Available by request.</div>
+        <div class="cred__hint">Direct briefings on file.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== FORM ============== -->
+  <section class="form-section" id="join">
+    <div class="wrap">
+      <div class="form-wrap">
+        <div class="form-intro reveal">
+          <span class="eyebrow">— 10 / Early Access</span>
+          <h2>Get Early Access to <em>TNBB</em>.</h2>
+          <p>
+            Join the insider list to receive updates on casting, launch dates, sponsor opportunities, investor
+            announcements, behind-the-scenes previews, and official enrollment windows.
+          </p>
+          <ul class="form-intro__perks">
+            <li>Casting &amp; enrollment notifications</li>
+            <li>Exclusive show news &amp; previews</li>
+            <li>Sponsor &amp; partner briefings</li>
+            <li>Investor updates by request</li>
+            <li>Early access ahead of public launch</li>
+          </ul>
+        </div>
+
+        <div class="form-card reveal delay-1">
+          <div class="form-card__head">
+            <span class="dot"></span>
+            <span>Insider List · Secure Submission</span>
+          </div>
+
+          <form class="form-grid" id="tnbb-form" novalidate>
+            <div class="field">
+              <label for="name">Full Name <span class="req">*</span></label>
+              <input type="text" id="name" name="name" required autocomplete="name" placeholder="Your full name">
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="email">Email <span class="req">*</span></label>
+                <input type="email" id="email" name="email" required autocomplete="email" placeholder="you@brand.com">
+              </div>
+              <div class="field">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="+1 (555) 000-0000">
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="location">City / State / Country <span class="req">*</span></label>
+              <input type="text" id="location" name="location" required autocomplete="address-level2"
+                placeholder="Miami, FL, USA">
+            </div>
+
+            <div class="field">
+              <label for="interest">Interest Type <span class="req">*</span></label>
+              <select id="interest" name="interest" required>
+                <option value="" disabled selected>Select one…</option>
+                <option value="Entrepreneur / Candidate">Entrepreneur / Candidate</option>
+                <option value="Viewer / Fan">Viewer / Fan</option>
+                <option value="Sponsor / Brand Partner">Sponsor / Brand Partner</option>
+                <option value="Investor / Strategic Partner">Investor / Strategic Partner</option>
+                <option value="Media / Press">Media / Press</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn--gold form-submit">
+              Get Early Access <span class="arrow"></span>
+            </button>
+
+            <p class="form-micro">
+              By submitting, you agree to receive casting updates, enrollment announcements, exclusive show news,
+              behind-the-scenes previews, sponsor opportunities, investor updates, and early access notifications. You
+              can unsubscribe anytime.
+            </p>
+          </form>
+
+          <div class="form-success" id="form-success" role="status" aria-live="polite">
+            <div class="form-success__mark">✓</div>
+            <h3>You're on the list.</h3>
+            <p>Welcome to the insider circle. Watch your inbox — the next update lands soon.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== FINAL CTA ============== -->
+  <section class="final">
+    <div class="wrap">
+      <h2 class="final__title display reveal">
+        The next big brand is not just being discovered.<br><em>It's being built.</em>
+      </h2>
+      <p class="final__sub reveal delay-1">
+        Stay connected. The door opens soon.
       </p>
-
-      <div class="hero__ctas reveal delay-4">
+      <div class="final__cta reveal delay-2">
         <a href="#join" class="btn btn--gold">
           Join the Insider List <span class="arrow"></span>
         </a>
-        <a href="#show" class="btn btn--ghost">
-          Explore the Opportunity <span class="arrow"></span>
-        </a>
-      </div>
-
-      <div class="status reveal delay-4" role="region" aria-label="Project status">
-        <div class="status__item">
-          <div class="status__label"><span class="status__dot"></span>Status</div>
-          <div class="status__value">Early Access</div>
-        </div>
-        <div class="status__item">
-          <div class="status__label"><span class="status__dot status__dot--mute"></span>Official Enrollment</div>
-          <div class="status__value">Opening Soon</div>
-        </div>
-        <div class="status__item">
-          <div class="status__label"><span class="status__dot"></span>Sponsor Conversations</div>
-          <div class="status__value">Now Open</div>
-        </div>
-        <div class="status__item">
-          <div class="status__label"><span class="status__dot status__dot--mute"></span>Investor Updates</div>
-          <div class="status__value">By Request</div>
-        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ============== TEASER ============== -->
-<section class="teaser">
-  <div class="wrap">
-    <p class="teaser__text reveal">
-      This is <em>not</em> just another business show.<br>
-      This is a live brand-building arena where entrepreneurs don't just pitch and leave — they build, compete, adapt, and <em>survive</em>.
-    </p>
-  </div>
-</section>
-
-<!-- ============== WHAT IS TNBB ============== -->
-<section class="section" id="show">
-  <div class="wrap">
-    <div class="what">
-      <div class="what__art reveal">
-        <div class="frame-corners"><span></span><span></span><span></span><span></span></div>
-      </div>
-      <div class="what__copy reveal delay-1">
-        <span class="eyebrow">— 01 / The Format</span>
-        <h2>A premium entrepreneurship reality show. Built live.</h2>
-        <p>
-          THE NEXT BIG BRAND is a premium entrepreneurship reality show where unknown founders compete to transform bold ideas into real brands — through branding, sales, marketing, finance, storytelling, leadership, social media, and resilience challenges.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============== COMPARISON ============== -->
-<section class="section section--bordered">
-  <div class="wrap">
-    <div class="section__head section__head--center reveal">
-      <div>
-        <span class="eyebrow">— 02 / Positioning</span>
-        <h2 class="section__title display">Unlike anything before it.</h2>
-      </div>
-    </div>
-  </div>
-  <div class="compare reveal">
-    <div class="compare__cell">
-      <div class="compare__label">Shark Tank</div>
-      <p class="compare__stmt">They pitch <strong>and leave</strong>.</p>
-    </div>
-    <div class="compare__cell">
-      <div class="compare__label">The Apprentice</div>
-      <p class="compare__stmt">They just <strong>execute</strong>.</p>
-    </div>
-    <div class="compare__cell">
-      <div class="compare__label">Big Brother</div>
-      <p class="compare__stmt">They just <strong>survive</strong>.</p>
-    </div>
-    <div class="compare__cell compare__cell--final">
-      <div class="compare__label compare__final-label">The Next Big Brand</div>
-      <p class="compare__stmt">They build<em>a real brand.</em></p>
-    </div>
-  </div>
-</section>
-
-<!-- ============== BRAND LAB ============== -->
-<section class="lab" id="lab">
-  <div class="wrap">
-    <div class="lab__head reveal">
-      <span class="eyebrow">— 03 / The Arena</span>
-      <h2 class="lab__title display">Enter The <em>Brand Lab</em>.</h2>
-      <p class="lab__lede">A controlled business arena where founders are tested, brands are exposed, and only the strongest survive.</p>
-    </div>
-
-    <div class="lab__grid reveal delay-1">
-      <div class="lab__pill"><span class="num">i.</span>     <div class="name">Branding</div></div>
-      <div class="lab__pill"><span class="num">ii.</span>    <div class="name">Sales</div></div>
-      <div class="lab__pill"><span class="num">iii.</span>   <div class="name">Marketing</div></div>
-      <div class="lab__pill"><span class="num">iv.</span>    <div class="name">Finance</div></div>
-      <div class="lab__pill"><span class="num">v.</span>     <div class="name">Storytelling</div></div>
-      <div class="lab__pill"><span class="num">vi.</span>    <div class="name">Leadership</div></div>
-      <div class="lab__pill"><span class="num">vii.</span>   <div class="name">Social Media</div></div>
-      <div class="lab__pill"><span class="num">viii.</span>  <div class="name">Resilience</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============== PATHS ============== -->
-<section class="section" id="paths">
-  <div class="wrap">
-    <div class="section__head reveal">
-      <div>
-        <span class="eyebrow">— 04 / Choose Your Path</span>
-        <h2 class="section__title display">Find your<br><em>way in.</em></h2>
-      </div>
-      <p class="section__lede">Four ways to engage with TNBB before the doors officially open — for founders, brands, investors, and the audience shaping it all.</p>
-    </div>
-
-    <div class="paths">
-      <article class="path reveal">
-        <div class="path__num">— 01 / Entrepreneurs</div>
-        <h3 class="path__title">For Entrepreneurs <em>&amp; Candidates</em></h3>
-        <p class="path__copy">Think your idea has what it takes to become a household name? Join the early list for official enrollment updates. Selected candidates may later be invited to submit a 60-second video explaining why they deserve a shot inside The Brand Lab.</p>
-        <button class="path__cta" data-interest="Entrepreneur / Candidate">Join Candidate Updates <span class="arrow"></span></button>
-      </article>
-
-      <article class="path reveal delay-1">
-        <div class="path__num">— 02 / Sponsors</div>
-        <h3 class="path__title">For Sponsors <em>&amp; Brands</em></h3>
-        <p class="path__copy">TNBB is designed for premium brand integration, sponsored challenges, product placement, storytelling, audience activation, and cultural relevance inside a business-driven entertainment format.</p>
-        <button class="path__cta" data-interest="Sponsor / Brand Partner">Explore Sponsorship Interest <span class="arrow"></span></button>
-      </article>
-
-      <article class="path reveal delay-2">
-        <div class="path__num">— 03 / Investors</div>
-        <h3 class="path__title">For Investors <em>&amp; Partners</em></h3>
-        <p class="path__copy">TNBB is built as a scalable entertainment IP with franchise, sponsorship, licensing, audience engagement, and brand royalty potential.</p>
-        <button class="path__cta" data-interest="Investor / Strategic Partner">Request Partner Updates <span class="arrow"></span></button>
-      </article>
-
-      <article class="path reveal delay-3">
-        <div class="path__num">— 04 / Viewers</div>
-        <h3 class="path__title">For <em>Viewers</em></h3>
-        <p class="path__copy">Follow the journey before the doors open. Watch the rise of unknown entrepreneurs as they fight to become the next breakout brand.</p>
-        <button class="path__cta" data-interest="Viewer / Fan">Follow the Journey <span class="arrow"></span></button>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ============== AUDIENCE ============== -->
-<section class="audience">
-  <div class="wrap">
-    <span class="eyebrow reveal">— 05 / The Audience</span>
-    <h2 class="audience__title display reveal delay-1">
-      The audience won't just watch.<br><em>They'll help decide.</em>
-    </h2>
-    <p class="audience__copy reveal delay-2">
-      Viewers will follow the journey, engage with the founders, react to the challenges, and help shape who deserves to become The Next Big Brand.
-    </p>
-    <div class="audience__verbs reveal delay-3">
-      <span>Vote</span>
-      <span>React</span>
-      <span>Follow</span>
-      <span>Share</span>
-      <span>Decide</span>
-    </div>
-  </div>
-</section>
-
-<!-- ============== WHY NOW ============== -->
-<section class="section">
-  <div class="wrap">
-    <div class="why">
-      <div class="reveal">
-        <span class="eyebrow">— 06 / The Timing</span>
-        <h2 class="section__title display" style="margin-top:12px">Why <em>Now</em>.</h2>
-        <p style="font-size:16px; color:var(--bone-dim); margin-top:32px; max-width:42ch; line-height:1.7;">
-          TNBB sits at the intersection of ambition, innovation, business, entertainment, and interactive viewing.
-        </p>
-      </div>
-      <ol class="why__list reveal delay-1">
-        <li>Entrepreneurship is <em>culture</em>.</li>
-        <li>Founders are the new <em>public figures</em>.</li>
-        <li>AI and the creator economy have <em>lowered the barrier</em> to launch.</li>
-        <li>Millions can start. <em>Few</em> know how to scale.</li>
-      </ol>
-    </div>
-  </div>
-</section>
-
-<!-- ============== STAKES ============== -->
-<section class="stakes">
-  <div class="wrap">
-    <div class="stakes__head reveal">
-      <span class="eyebrow">— 07 / The Stakes</span>
-      <h2 class="section__title display" style="margin-top:12px;">What's <em>on the line.</em></h2>
-    </div>
-
-    <div class="stakes__grid reveal delay-1">
-      <div class="stake">
-        <div class="stake__icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="12" r="9"/><path d="M9 9.5c.5-1 1.5-1.5 3-1.5s2.5.5 2.5 1.8c0 2.2-5.5 2-5.5 4.4 0 1.3 1 1.8 2.5 1.8s2.5-.5 3-1.5"/><path d="M12 6v2M12 16v2"/></svg>
-        </div>
-        <p class="stake__text">Cash prize</p>
-      </div>
-      <div class="stake">
-        <div class="stake__icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="9" r="4"/><path d="M5 21c0-3.9 3.1-7 7-7s7 3.1 7 7"/><path d="M16 5l2-2M8 5L6 3"/></svg>
-        </div>
-        <p class="stake__text">Mogul evaluation</p>
-      </div>
-      <div class="stake">
-        <div class="stake__icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M3 12l4-4 4 4 4-4 6 6"/><path d="M3 20h18"/></svg>
-        </div>
-        <p class="stake__text">Public voting</p>
-      </div>
-      <div class="stake">
-        <div class="stake__icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 3 2.5 15 0 18M12 3c-2.5 3-2.5 15 0 18"/></svg>
-        </div>
-        <p class="stake__text">National exposure</p>
-      </div>
-      <div class="stake">
-        <div class="stake__icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M5 12l4 4 10-10"/><circle cx="12" cy="12" r="9"/></svg>
-        </div>
-        <p class="stake__text">Brand validation</p>
-      </div>
-      <div class="stake">
-        <div class="stake__icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="M3 9h18M8 5V3M16 5V3"/></svg>
-        </div>
-        <p class="stake__text">Real business challenges</p>
-      </div>
-      <div class="stake stake--final">
-        <div class="stake__icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4-6.2-4.6-6.2 4.6 2.4-7.4L2 9.4h7.6z"/></svg>
-        </div>
-        <p class="stake__text">One winner.<em>One breakout brand.</em></p>
-      </div>
-      <div class="stake">
-        <div class="stake__icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="12" r="3"/><path d="M12 2v2M12 20v2M22 12h-2M4 12H2M18.4 5.6l-1.4 1.4M7 17l-1.4 1.4M18.4 18.4L17 17M7 7L5.6 5.6"/></svg>
-        </div>
-        <p class="stake__text">National spotlight</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============== VIDEO SOON ============== -->
-<section class="section section--bordered">
-  <div class="wrap">
-    <div class="video-soon">
-      <div class="video-soon__visual reveal">
-        <div class="video-soon__rec"><span class="dot"></span>REC · COMING SOON</div>
-        <div class="play-mark"></div>
-        <div class="video-soon__timer">00:60</div>
-      </div>
-      <div class="reveal delay-1">
-        <span class="eyebrow">— 08 / Casting Preview</span>
-        <h2>Coming Soon: <em>60-Second</em> Founder Video Submission.</h2>
-        <p>
-          Official enrollment is not open yet. Soon, selected candidates will be invited to submit a one-minute video explaining who they are, what they are building, and why they deserve a shot inside The Brand Lab.
-        </p>
-        <a href="#join" class="btn btn--ghost">
-          Be Notified When Enrollment Opens <span class="arrow"></span>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============== CREDIBILITY ============== -->
-<section class="section">
-  <div class="wrap">
-    <div class="section__head section__head--center reveal">
-      <div>
-        <span class="eyebrow">— 09 / Building Momentum</span>
-        <h2 class="section__title display">In <em>development.</em></h2>
-        <p class="section__lede" style="margin-top:24px">Every layer of TNBB is being assembled with intent. Updates released as each phase opens.</p>
-      </div>
-    </div>
-  </div>
-  <div class="credibility reveal delay-1">
-    <div class="cred">
-      <div class="cred__label">Business Moguls</div>
-      <div class="cred__status">To be announced.</div>
-      <div class="cred__hint">Curated panel in formation.</div>
-    </div>
-    <div class="cred">
-      <div class="cred__label">Strategic Partners</div>
-      <div class="cred__status">Coming soon.</div>
-      <div class="cred__hint">Selected on cultural fit.</div>
-    </div>
-    <div class="cred">
-      <div class="cred__label">Official Enrollment</div>
-      <div class="cred__status">Opening soon.</div>
-      <div class="cred__hint">Insider list opens first.</div>
-    </div>
-    <div class="cred">
-      <div class="cred__label">Media &amp; Sponsor Updates</div>
-      <div class="cred__status">Available by request.</div>
-      <div class="cred__hint">Direct briefings on file.</div>
-    </div>
-  </div>
-</section>
-
-<!-- ============== FORM ============== -->
-<section class="form-section" id="join">
-  <div class="wrap">
-    <div class="form-wrap">
-      <div class="form-intro reveal">
-        <span class="eyebrow">— 10 / Early Access</span>
-        <h2>Get Early Access to <em>TNBB</em>.</h2>
-        <p>
-          Join the insider list to receive updates on casting, launch dates, sponsor opportunities, investor announcements, behind-the-scenes previews, and official enrollment windows.
-        </p>
-        <ul class="form-intro__perks">
-          <li>Casting &amp; enrollment notifications</li>
-          <li>Exclusive show news &amp; previews</li>
-          <li>Sponsor &amp; partner briefings</li>
-          <li>Investor updates by request</li>
-          <li>Early access ahead of public launch</li>
-        </ul>
-      </div>
-
-      <div class="form-card reveal delay-1">
-        <div class="form-card__head">
-          <span class="dot"></span>
-          <span>Insider List · Secure Submission</span>
-        </div>
-
-        <form class="form-grid" id="tnbb-form" novalidate>
-          <div class="field">
-            <label for="name">Full Name <span class="req">*</span></label>
-            <input type="text" id="name" name="name" required autocomplete="name" placeholder="Your full name">
-          </div>
-
-          <div class="field-row">
-            <div class="field">
-              <label for="email">Email <span class="req">*</span></label>
-              <input type="email" id="email" name="email" required autocomplete="email" placeholder="you@brand.com">
-            </div>
-            <div class="field">
-              <label for="phone">Phone</label>
-              <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="+1 (555) 000-0000">
-            </div>
-          </div>
-
-          <div class="field">
-            <label for="location">City / State / Country <span class="req">*</span></label>
-            <input type="text" id="location" name="location" required autocomplete="address-level2" placeholder="Miami, FL, USA">
-          </div>
-
-          <div class="field">
-            <label for="interest">Interest Type <span class="req">*</span></label>
-            <select id="interest" name="interest" required>
-              <option value="" disabled selected>Select one…</option>
-              <option value="Entrepreneur / Candidate">Entrepreneur / Candidate</option>
-              <option value="Viewer / Fan">Viewer / Fan</option>
-              <option value="Sponsor / Brand Partner">Sponsor / Brand Partner</option>
-              <option value="Investor / Strategic Partner">Investor / Strategic Partner</option>
-              <option value="Media / Press">Media / Press</option>
-              <option value="Other">Other</option>
-            </select>
-          </div>
-
-          <button type="submit" class="btn btn--gold form-submit">
-            Get Early Access <span class="arrow"></span>
-          </button>
-
-          <p class="form-micro">
-            By submitting, you agree to receive casting updates, enrollment announcements, exclusive show news, behind-the-scenes previews, sponsor opportunities, investor updates, and early access notifications. You can unsubscribe anytime.
+  <!-- ============== FOOTER ============== -->
+  <footer>
+    <div class="wrap">
+      <div class="footer__top">
+        <div>
+          <h3 class="footer__brand-name">The Next Big Brand<sup
+              style="font-size:0.4em; color:var(--gold); margin-left:4px;">®</sup></h3>
+          <p class="footer__tagline">
+            A premium entrepreneurship reality competition. Created by Cleiton Schneider. Produced by Schneider Cinema.
           </p>
-        </form>
-
-        <div class="form-success" id="form-success" role="status" aria-live="polite">
-          <div class="form-success__mark">✓</div>
-          <h3>You're on the list.</h3>
-          <p>Welcome to the insider circle. Watch your inbox — the next update lands soon.</p>
+        </div>
+        <div class="footer__col">
+          <h4>The Show</h4>
+          <ul>
+            <li><a href="#show">Format</a></li>
+            <li><a href="#lab">Brand Lab</a></li>
+            <li><a href="#paths">Audience</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Get Involved</h4>
+          <ul>
+            <li><a href="#paths">Entrepreneurs</a></li>
+            <li><a href="#paths">Sponsors</a></li>
+            <li><a href="#paths">Investors</a></li>
+            <li><a href="#join">Press &amp; Media</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Schneider Cinema</h4>
+          <ul>
+            <li><a href="https://www.schneidercinema.com" target="_blank" rel="noopener">schneidercinema.com</a></li>
+            <li><a href="#">TV · Streaming · Global Format</a></li>
+            <li><a href="#join">Contact</a></li>
+          </ul>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============== FINAL CTA ============== -->
-<section class="final">
-  <div class="wrap">
-    <h2 class="final__title display reveal">
-      The next big brand is not just being discovered.<br><em>It's being built.</em>
-    </h2>
-    <p class="final__sub reveal delay-1">
-      Stay connected. The door opens soon.
-    </p>
-    <div class="final__cta reveal delay-2">
-      <a href="#join" class="btn btn--gold">
-        Join the Insider List <span class="arrow"></span>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ============== FOOTER ============== -->
-<footer>
-  <div class="wrap">
-    <div class="footer__top">
-      <div>
-        <h3 class="footer__brand-name">The Next Big Brand<sup style="font-size:0.4em; color:var(--gold); margin-left:4px;">®</sup></h3>
-        <p class="footer__tagline">
-          A premium entrepreneurship reality competition. Created by Cleiton Schneider. Produced by Schneider Cinema.
-        </p>
-      </div>
-      <div class="footer__col">
-        <h4>The Show</h4>
-        <ul>
-          <li><a href="#show">Format</a></li>
-          <li><a href="#lab">Brand Lab</a></li>
-          <li><a href="#paths">Audience</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h4>Get Involved</h4>
-        <ul>
-          <li><a href="#paths">Entrepreneurs</a></li>
-          <li><a href="#paths">Sponsors</a></li>
-          <li><a href="#paths">Investors</a></li>
-          <li><a href="#join">Press &amp; Media</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h4>Schneider Cinema</h4>
-        <ul>
-          <li><a href="https://www.schneidercinema.com" target="_blank" rel="noopener">schneidercinema.com</a></li>
-          <li><a href="#">TV · Streaming · Global Format</a></li>
-          <li><a href="#join">Contact</a></li>
-        </ul>
+      <div class="footer__bottom">
+        <div>© <span id="year"></span> Schneider Cinema. All rights reserved.</div>
+        <div class="made">Created by Cleiton Schneider · A Schneider Cinema Original</div>
       </div>
     </div>
-    <div class="footer__bottom">
-      <div>© <span id="year"></span> Schneider Cinema. All rights reserved.</div>
-      <div class="made">Created by Cleiton Schneider · A Schneider Cinema Original</div>
-    </div>
-  </div>
-</footer>
+  </footer>
 
-<!-- Sticky mobile CTA -->
-<a href="#join" class="sticky-cta">Join the Insider List</a>
+  <!-- Sticky mobile CTA -->
+  <a href="#join" class="sticky-cta">Join the Insider List</a>
 
-<script>
-  // ===== Nav blur on scroll =====
-  const nav = document.getElementById('nav');
-  const onScroll = () => {
-    if (window.scrollY > 24) nav.classList.add('scrolled');
-    else nav.classList.remove('scrolled');
-  };
-  window.addEventListener('scroll', onScroll, { passive: true });
-  onScroll();
+  <script>
+    // ===== Nav blur on scroll =====
+    const nav = document.getElementById('nav');
+    const onScroll = () => {
+      if (window.scrollY > 24) nav.classList.add('scrolled');
+      else nav.classList.remove('scrolled');
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
 
-  // ===== Scroll reveal =====
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.classList.add('in');
-        observer.unobserve(e.target);
-      }
+    // ===== Scroll reveal =====
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('in');
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // ===== Year =====
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // ===== Path CTAs preselect interest type in form =====
+    document.querySelectorAll('.path__cta').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const interest = btn.dataset.interest;
+        const select = document.getElementById('interest');
+        if (interest && select) select.value = interest;
+        document.getElementById('join').scrollIntoView({ behavior: 'smooth' });
+      });
     });
-  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-  // ===== Year =====
-  document.getElementById('year').textContent = new Date().getFullYear();
-
-  // ===== Path CTAs preselect interest type in form =====
-  document.querySelectorAll('.path__cta').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const interest = btn.dataset.interest;
-      const select = document.getElementById('interest');
-      if (interest && select) select.value = interest;
+    // ===== Burger (simple toggle to scroll-to-list on mobile) =====
+    document.getElementById('burger').addEventListener('click', () => {
       document.getElementById('join').scrollIntoView({ behavior: 'smooth' });
     });
-  });
 
-  // ===== Burger (simple toggle to scroll-to-list on mobile) =====
-  document.getElementById('burger').addEventListener('click', () => {
-    document.getElementById('join').scrollIntoView({ behavior: 'smooth' });
-  });
+    // ===== Form submit handler =====
+    // Ready for CRM/database capture:
+    //   - Tagged by interest type (lead.interest)
+    //   - Drop-in for Mailchimp, HubSpot, Airtable, Google Sheets, ConvertKit, etc.
+    //   - Replace the fetch URL with your endpoint or webhook.
+    const form = document.getElementById('tnbb-form');
+    const success = document.getElementById('form-success');
 
-  // ===== Form submit handler =====
-  // Ready for CRM/database capture:
-  //   - Tagged by interest type (lead.interest)
-  //   - Drop-in for Mailchimp, HubSpot, Airtable, Google Sheets, ConvertKit, etc.
-  //   - Replace the fetch URL with your endpoint or webhook.
-  const form = document.getElementById('tnbb-form');
-  const success = document.getElementById('form-success');
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
 
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
+      const lead = {
+        name: form.name.value.trim(),
+        email: form.email.value.trim(),
+        phone: form.phone.value.trim(),
+        location: form.location.value.trim(),
+        interest: form.interest.value,
+        source: 'TNBB Landing — Insider List',
+        utm: new URLSearchParams(window.location.search).toString(),
+        timestamp: new Date().toISOString()
+      };
 
-    const lead = {
-      name:     form.name.value.trim(),
-      email:    form.email.value.trim(),
-      phone:    form.phone.value.trim(),
-      location: form.location.value.trim(),
-      interest: form.interest.value,
-      source:   'TNBB Landing — Insider List',
-      utm:      new URLSearchParams(window.location.search).toString(),
-      timestamp: new Date().toISOString()
-    };
+      // Basic validation
+      if (!lead.name || !lead.email || !lead.location || !lead.interest) {
+        form.querySelectorAll('[required]').forEach(f => {
+          if (!f.value) f.style.borderBottomColor = '#c8a564';
+        });
+        return;
+      }
 
-    // Basic validation
-    if (!lead.name || !lead.email || !lead.location || !lead.interest) {
-      form.querySelectorAll('[required]').forEach(f => {
-        if (!f.value) f.style.borderBottomColor = '#c8a564';
-      });
-      return;
-    }
+      // ----- INTEGRATION POINT -----
+      // Example: POST to your CRM endpoint / webhook
+      // await fetch('https://your-endpoint.example/api/leads', {
+      //   method: 'POST',
+      //   headers: { 'Content-Type': 'application/json' },
+      //   body: JSON.stringify(lead)
+      // });
+      //
+      // For Mailchimp embedded forms, replace this form's action+method.
+      // For HubSpot, use their Forms API and pass `lead`.
+      // For Airtable, POST to your base/table with API key.
+      // For Google Sheets, use an Apps Script webhook.
 
-    // ----- INTEGRATION POINT -----
-    // Example: POST to your CRM endpoint / webhook
-    // await fetch('https://your-endpoint.example/api/leads', {
-    //   method: 'POST',
-    //   headers: { 'Content-Type': 'application/json' },
-    //   body: JSON.stringify(lead)
-    // });
-    //
-    // For Mailchimp embedded forms, replace this form's action+method.
-    // For HubSpot, use their Forms API and pass `lead`.
-    // For Airtable, POST to your base/table with API key.
-    // For Google Sheets, use an Apps Script webhook.
-    // For ConvertKit, use their /subscribe endpoint with the form ID.
-    //
-    // Fire analytics / pixel events (Meta, Google, TikTok, LinkedIn):
-    if (window.gtag)  window.gtag('event', 'lead_submit', { interest: lead.interest });
-    if (window.fbq)   window.fbq('track', 'Lead', { content_name: 'TNBB Insider List' });
-    if (window.ttq)   window.ttq.track('SubmitForm', { interest: lead.interest });
-    if (window.lintrk) window.lintrk('track', { conversion_id: 'TNBB_LEAD' });
+      // ----- GOOGLE SHEETS INTEGRATION -----
+      const SHEETS_URL = 'https://script.google.com/macros/s/AKfycbwtYpOLYRwaEUNboFjL1Esere3Twvf2doS77FgoT4dSZ1CAhyxsT71aVt6PttZoc4Wd/exec';
 
-    console.info('TNBB lead captured →', lead);
-    // ------------------------------
+      try {
+        await fetch(SHEETS_URL, {
+          method: 'POST',
+          mode: 'no-cors',                              // required for Apps Script
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            ...lead,
+            userAgent: navigator.userAgent
+          })
+        });
+      } catch (err) {
+        console.error('Sheets submission failed:', err);
+        // Still show success to the user — failures are rare and logged
+      }
 
-    form.style.display = 'none';
-    success.classList.add('in');
-  });
-</script>
+      // For ConvertKit, use their /subscribe endpoint with the form ID.
+      //
+      // Fire analytics / pixel events (Meta, Google, TikTok, LinkedIn):
+      if (window.gtag) window.gtag('event', 'lead_submit', { interest: lead.interest });
+      if (window.fbq) window.fbq('track', 'Lead', { content_name: 'TNBB Insider List' });
+      if (window.ttq) window.ttq.track('SubmitForm', { interest: lead.interest });
+      if (window.lintrk) window.lintrk('track', { conversion_id: 'TNBB_LEAD' });
+
+      console.info('TNBB lead captured →', lead);
+      // ------------------------------
+
+      form.style.display = 'none';
+      success.classList.add('in');
+    });
+  </script>
 
 </body>
+
 </html>
